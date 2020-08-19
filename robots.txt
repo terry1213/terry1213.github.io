@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://terry1213.github.io/sitemap.xml
