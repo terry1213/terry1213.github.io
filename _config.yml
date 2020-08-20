@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "임연우"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile/bio-photo.jpeg"
   bio              : "배운 것을 **열심히** 기록하자."
   location         : "Republic of Korea"
   email            : "21500602@handong.edu"
