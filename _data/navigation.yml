@@ -7,3 +7,17 @@ main:
     url: /about/
   - title: "Posts by Year"
     url: /year-archive/
+
+categories:
+  - title: "Mobile"
+    children:
+      - title: "Swift"
+        url: /categories/#Swift/
+      - title: "Firebase"
+        url: /categories/#Firebase/
+  - title: "코딩 문제"
+    children:
+      - title: "백준"
+        url: /categories/#백준/
+      - title: "프로그래머스"
+        url: /categories/#프로그래머스/
