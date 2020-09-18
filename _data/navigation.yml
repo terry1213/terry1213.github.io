@@ -11,13 +11,15 @@ main:
 categories:
   - title: "Mobile"
     children:
+      - title: "Flutter"
+        url: /categories/#flutter
       - title: "Swift"
-        url: /categories/#Swift/
+        url: /categories/#swift
       - title: "Firebase"
-        url: /categories/#Firebase/
+        url: /categories/#firebase
   - title: "코딩 문제"
     children:
       - title: "백준"
-        url: /categories/#Backjoon/
+        url: /categories/#backjoon
       - title: "프로그래머스"
-        url: /categories/#Programmers/
+        url: /categories/#programmers
