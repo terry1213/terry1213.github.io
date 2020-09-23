@@ -1,6 +1,7 @@
 ---
 title: 완주하지 못한 선수 [프로그래머스] [해시] [Level 1]
-categories: []
+categories:
+- Programmers
 tags:
 - 코딩문제
 - JavaScript
