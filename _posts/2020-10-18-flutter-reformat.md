@@ -23,12 +23,18 @@ Flutter에서는 괄호 뒤에 자동으로 주석을 달아주는 기능을 제
 
 해결 방법은 매우 간단하다.
 
-자동 정렬을 하고 싶은 파일에서 손가락 두 개로 클릭 혹은 control 키를 누른 체로 손가락 한 개로 클릭을 하면(윈도우는 우클릭) 아래와 같은 메뉴가 뜬다.
-
 ![Example2](/assets/flutter/Reformat/Reformat Example2.png){: width="300" height="200"}
 
-여기서 중간에 'Reformat Code with dartfmt'를 클릭하면
+자동 정렬을 하고 싶은 파일에서 손가락 두 개로 클릭 혹은 control 키를 누른 체로 손가락 한 개로 클릭을 하면(윈도우는 우클릭) 위와 같은 메뉴가 뜬다. 여기서 중간에 'Reformat Code with dartfmt'를 클릭하거나,
 
-![Example3](/assets/flutter/Reformat/Reformat Example3.png){: width="400" height="300"}
+![Example3](/assets/flutter/Reformat/Reformat Example3.png){: width="300" height="200"}
+
+상단 메뉴 중에 Code를 선택하여 'Reformat Code with dartfmt'를 클릭하면,
+
+![Example4](/assets/flutter/Reformat/Reformat Example4.png){: width="400" height="300"}
 
 이와 같이 코드가 사용자가 구조를 파악하기 쉬운 형태로 정렬되는 것을 볼 수 있다.
+
+## 단축키 (Mac 기준)
+
+'**option + cammand + L**' 를 통해서 더 간편하게 자동 정렬을 할 수도 있다.
