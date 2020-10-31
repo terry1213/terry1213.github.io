@@ -17,9 +17,19 @@ categories:
         url: /categories/#swift
       - title: "Firebase"
         url: /categories/#firebase
+  - title: "Web"
+    children:
+      - title: "Javascript"
+        url: /categories/#javascript
+      - title: "Apache Tomcat"
+        url: /categories/#apachetomcat
   - title: "코딩 문제"
     children:
       - title: "백준"
         url: /categories/#backjoon
       - title: "프로그래머스"
         url: /categories/#programmers
+  - title: "Blog"
+    children:
+      - title: "Blog"
+        url: /categories/#blog
