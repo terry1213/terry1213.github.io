@@ -15,14 +15,18 @@ categories:
         url: /categories/#flutter
       - title: "Swift"
         url: /categories/#swift
-      - title: "Firebase"
-        url: /categories/#firebase
   - title: "Web"
     children:
       - title: "Javascript"
         url: /categories/#javascript
-      - title: "Apache Tomcat"
-        url: /categories/#apachetomcat
+      - title: "Apache"
+        url: /categories/#apache
+  - title: "Database"
+    children:
+      - title: "MySQL"
+        url: /categories/#mysql
+      - title: "Firebase"
+        url: /categories/#firebase
   - title: "코딩 문제"
     children:
       - title: "백준"
