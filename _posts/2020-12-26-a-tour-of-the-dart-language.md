@@ -15,7 +15,7 @@ Dart 공식 Docs의 [A tour of the Dart language](https://dart.dev/guides/langua
  
 #  A tour of the Dart language 목차
  
-1.  [~~A basic Dart program~~](http://)
+1.  [A basic Dart program](/flutter/dart/a-tour-of-the-dart-language-1-a-basic-dart-program/)
 2.  [~~Important concepts~~](http://)
 3.  [~~Keywords~~](http://)
 4.  [~~Variables~~](http://)
