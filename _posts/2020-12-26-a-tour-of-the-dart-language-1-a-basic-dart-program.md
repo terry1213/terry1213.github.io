@@ -7,6 +7,7 @@ tags:
 - Mobile
 ---
 
+[목차로 돌아가기](/flutter/dart/a-tour-of-the-dart-language/)
 # A basic Dart program
 
 아래의 코드 예시는 Dart의 가장 기본적인 특징들을 많이 보여준다.
