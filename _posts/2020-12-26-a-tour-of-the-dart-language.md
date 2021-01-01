@@ -20,7 +20,7 @@ Dart 공식 Docs의 [A tour of the Dart language](https://dart.dev/guides/langua
 3.  [Keywords](/flutter/dart/a-tour-of-the-dart-language-3-keywords/)
 4.  [Variables](/flutter/dart/a-tour-of-the-dart-language-4-variables/)
 5.  [Built-in types](/flutter/dart/a-tour-of-the-dart-language-5-built-in-types/)
-6.  [~~Functions~~](http://)
+6.  [Functions](/flutter/dart/a-tour-of-the-dart-language-6-functions/)
 7.  [~~Operators~~](http://)
 8.  [~~Control flow statements~~](http://)
 9.  [~~Exceptions~~](http://)
