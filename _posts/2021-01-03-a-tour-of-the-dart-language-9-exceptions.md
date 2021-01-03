@@ -27,6 +27,8 @@ throw FormatException('Expected at least 1 section');
 throw 'Out of llamas!';
 {% endhighlight %}
 
+> **Note**: 출시 수준의 코드는 Error나 Exception을 implement하는 타입을 throw한다.
+
 exception을 throw하는 것은 expression이기 때문에 => statement 안에 넣을 수 있다. 이는 expression을 넣을 수 있는 곳이면 어디던 마찬가지다.
 
 {% highlight dart %}
@@ -61,9 +63,9 @@ try {
 }
 {% endhighlight %}
 
-위의 코드가 보여주듯이 on, catch, 혹은 둘 다 사용할 수 있다. on은 exception 타입을 명시할 필요가 있을 때 사용한다. catch는 exception handler가 exception 오브젝트를 필요로 할 때 사용한다.
+위의 코드가 보여주듯이 `on`, `catch`, 혹은 둘 다 사용할 수 있다. `on`은 exception 타입을 명시할 필요가 있을 때 사용한다. `catch`는 exception handler가 exception 오브젝트를 필요로 할 때 사용한다.
 
-catch()에 한 개 혹은 두 개의 parameter를 명시할 수 있다. 첫번째는 throw된 exception이고 두번째는 stach trace이다.
+`catch()`에 한 개 혹은 두 개의 parameter를 명시할 수 있다. 첫번째는 throw된 exception이고 두번째는 stach trace이다.
 
 {% highlight dart %}
 try {
@@ -76,7 +78,7 @@ try {
 }
 {% endhighlight %}
 
-exception의 전파를 허용하면서 이를 부분적으로 처리하기 위해, rethrow 키워드를 사용한다.
+exception의 전파를 허용하면서 이를 부분적으로 처리하기 위해, `rethrow` 키워드를 사용한다.
 
 {% highlight dart %}
 void misbehave() {
@@ -99,7 +101,7 @@ void main() {
 {% endhighlight %}
 
 ## Finally
-exeption이 throw되었던 아니던 실행을 보장할 코드에는 finally 절을 사용하면 된다. 만약 exception에 일치하는 catch 절이 없다면 exception은 finally 절이 실행된 후에 퍼진다.
+exeption이 throw되었던 아니던 실행을 보장할 코드에는 `finally` 절을 사용하면 된다. 만약 exception에 일치하는 `catch` 절이 없다면 exception은 `finally` 절이 실행된 후에 퍼진다.
 
 {% highlight dart %}
 try {
@@ -110,7 +112,7 @@ try {
 }
 {% endhighlight %}
 
-finally 절은 일치하는 catch 절 이후에 실행된다.
+`finally` 절은 일치하는 `catch` 절 이후에 실행된다.
 
 {% highlight dart %}
 try {

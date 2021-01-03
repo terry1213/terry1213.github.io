@@ -33,4 +33,4 @@ tags:
 
 * 1번 표시가 되어 있는 단어는 contextual keyword이다. 이 단어들은 특정 장소에서만 의미를 갖는다. 때문에 모든 곳에서 identifier로 사용할 수 있다.
 * 2번 표시가 되어 있는 단어는 built-in identifier이다. JavaScript 코드를 Dart로 가져오는 작업을 단순화하기 위해 사용되는 이 단어들은 대부분의 장소에서  identifier로 사용할 수 있다. 하지만 클래스나 타입 이름, 그리고 import prefix로 사용할 수 없다.
-* 3번 표시가 되어 있는 단어는 Dart의 1.0 릴리스 이후에 추가된 비동기 지원(asynchrony support)에 관련된 더 새롭고 제한된 reserved word이다. async, async*, sync가 표시된 function body에선 await 이나 yeild를 identifier로 사용할 수 없다.
+* 3번 표시가 되어 있는 단어는 Dart의 1.0 릴리스 이후에 추가된 비동기 지원(asynchrony support)에 관련된 더 새롭고 제한된 reserved word이다. `async`, `async*`, `sync`가 표시된 function body에선 `await` 이나 `yeild`를 identifier로 사용할 수 없다.
