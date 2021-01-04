@@ -1,5 +1,5 @@
 ---
-title: "[Android Studio] 프로젝트 전체 검색"
+title: "[Android Studio] 전체 검색(Find All)"
 categories:
 - AndroidStudio
 tags:
