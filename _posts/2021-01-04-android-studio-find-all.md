@@ -10,12 +10,12 @@ tags:
 
 ## Edit - Find - Find in Path..
 
-![Example1](/assets/androidstudio/Example1.png){: width="250" height="400"}
-![Example2](/assets/androidstudio/Example2.png){: width="250" height="400"}
+![Example1](/assets/androidstudio/findall/Example1.png){: width="250" height="400"}
+![Example2](/assets/androidstudio/findall/Example2.png){: width="250" height="400"}
 
 `Edit - Find - Find in Path..`순서로 클릭하면 아래와 같은 화면이 나온다. 나오는 검색란을 통해 **프로젝트 전체 검색**을 하면 된다.
 
-![Example3](/assets/androidstudio/Example3.png){: width="500" height="500"}
+![Example3](/assets/androidstudio/findall/Example3.png){: width="500" height="500"}
 ## Command + Shift + F (Mac)
 
 단축키는 매우 쉽다(파일 내 검색에서 Shift 하나만 더 누르면 되는 건데 왜 그 고생을 했을까) . `Command + Shift + F`를 눌러도 위의 방법과 동일한 화면이 나온다.
