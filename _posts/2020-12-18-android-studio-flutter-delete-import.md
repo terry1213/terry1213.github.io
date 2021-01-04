@@ -2,6 +2,7 @@
 title: "[Android Studio] [Flutter] 사용하지 않는 import 자동 삭제"
 categories:
 - Flutter
+- AndroidStudio
 tags:
 - Mobile
 - Tip
