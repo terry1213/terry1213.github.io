@@ -1,7 +1,6 @@
 ---
 title: A tour of the Dart language [0. 목차]
 categories:
-- Flutter
 - Dart
 tags:
 - Mobile

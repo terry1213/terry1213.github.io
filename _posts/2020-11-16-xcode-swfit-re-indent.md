@@ -1,11 +1,10 @@
 ---
-title: "[Xcode] [Swfit] 코드 재정렬(Re-Indent) 방법"
+title: "[Xcode] 코드 재정렬(Re-Indent) 방법"
 tags:
 - Mobile
 - iOS
 - Tip
 categories:
-- Swift
 - Xcode
 ---
 

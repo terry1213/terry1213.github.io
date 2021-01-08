@@ -1,7 +1,6 @@
 ---
-title: "[Xcode] [Swift] 폰트 자동 조절(Automatically Adjusts Font) 기능"
+title: "[Xcode] 폰트 자동 조절(Automatically Adjusts Font) 기능"
 categories:
-- Swift
 - Xcode
 tags:
 - iOS

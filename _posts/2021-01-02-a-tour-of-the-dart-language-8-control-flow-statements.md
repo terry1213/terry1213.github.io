@@ -1,7 +1,6 @@
 ---
 title: A tour of the Dart language [8. Control flow statements]
 categories:
-- Flutter
 - Dart
 tags:
 - Mobile

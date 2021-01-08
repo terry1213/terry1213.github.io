@@ -1,7 +1,6 @@
 ---
 title: A tour of the Dart language [6. Functions]
 categories:
-- Flutter
 - Dart
 tags:
 - Mobile

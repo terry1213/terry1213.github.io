@@ -1,7 +1,6 @@
 ---
 title: A tour of the Dart language [7. Operators]
 categories:
-- Flutter
 - Dart
 tags:
 - Mobile

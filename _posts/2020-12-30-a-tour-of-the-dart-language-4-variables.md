@@ -1,7 +1,6 @@
 ---
 title: A tour of the Dart language [4. Variables]
 categories:
-- Flutter
 - Dart
 tags:
 - Mobile

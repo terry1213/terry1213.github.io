@@ -1,7 +1,6 @@
 ---
 title: A tour of the Dart language [2. Important concepts]
 categories:
-- Flutter
 - Dart
 tags:
 - Mobile

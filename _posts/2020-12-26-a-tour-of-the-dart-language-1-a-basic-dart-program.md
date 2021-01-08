@@ -1,7 +1,6 @@
 ---
 title: A tour of the Dart language [1. A basic Dart program]
 categories:
-- Flutter
 - Dart
 tags:
 - Mobile

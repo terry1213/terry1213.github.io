@@ -1,7 +1,6 @@
 ---
 title: A tour of the Dart language [5. Built-in types]
 categories:
-- Flutter
 - Dart
 tags:
 - Mobile

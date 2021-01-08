@@ -1,7 +1,6 @@
 ---
 title: A tour of the Dart language [9. Exceptions]
 categories:
-- Flutter
 - Dart
 tags:
 - Mobile
