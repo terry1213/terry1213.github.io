@@ -13,6 +13,10 @@ categories:
     children:
       - title: "Flutter"
         url: /categories/#flutter
+      - title: "Dart"
+        url: /categories/#dart
+      - title: "AndroidStudio"
+        url: /categories/#androidstudio
       - title: "Swift"
         url: /categories/#swift
       - title: "Xcode"
@@ -23,6 +27,8 @@ categories:
         url: /categories/#javascript
       - title: "Apache"
         url: /categories/#apache
+      - title: "Markdown"
+        url: /categories/#markdown
   - title: "Database"
     children:
       - title: "MySQL"
