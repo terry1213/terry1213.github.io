@@ -6,7 +6,7 @@ tags:
 - Mobile
 ---
 
-[목차로 돌아가기](/flutter/dart/a-tour-of-the-dart-language/)
+[목차로 돌아가기](/dart/a-tour-of-the-dart-language/)
 # Built-in types
 다트 언어는 다음 타입들에 대해 특별한 지원을 해준다.
 

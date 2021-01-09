@@ -6,7 +6,7 @@ tags:
 - Mobile
 ---
 
-[목차로 돌아가기](/flutter/dart/a-tour-of-the-dart-language/)
+[목차로 돌아가기](/dart/a-tour-of-the-dart-language/)
 # Variables
 아래는 variable을 생성하고 initialize 하는 예시이다.
 

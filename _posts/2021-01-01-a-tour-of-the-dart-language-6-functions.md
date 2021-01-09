@@ -6,6 +6,7 @@ tags:
 - Mobile
 ---
 
+[목차로 돌아가기](/dart/a-tour-of-the-dart-language/)
 # Functions
 
 Dart는 객체지향(object-oriented) 언어이기 때문에 함수(function)들도 오브젝트(object)이며 타입을 가진다.  이것은 함수가 변수(variable)에 할당되거나 다른 함수에 argument로 보내질 수 있다는 것을 의미한다. Dart 클래스의 인스턴스를 함수처럼 부를 수도 있다.

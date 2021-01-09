@@ -6,7 +6,7 @@ tags:
 - Mobile
 ---
 
-[목차로 돌아가기](/flutter/dart/a-tour-of-the-dart-language/)
+[목차로 돌아가기](/dart/a-tour-of-the-dart-language/)
 # Important concepts
 Dart 언어를 배울 때 아래의 항목들을 명심해야한다.
 

@@ -6,7 +6,7 @@ tags:
 - Mobile
 ---
 
-[목차로 돌아가기](/flutter/dart/a-tour-of-the-dart-language/)
+[목차로 돌아가기](/dart/a-tour-of-the-dart-language/)
 # Keywords
 
 아래 테이블의 단어들은 Dart 언어가 다른 단어와 다르게 생각한다.

@@ -6,6 +6,7 @@ tags:
 - Mobile
 ---
 
+[목차로 돌아가기](/dart/a-tour-of-the-dart-language/)
 # Exceptions
 Dart에서 exception을 throw 하고 catch할 수 있다. exception은 개발자가 기대하지 않는 일이 일어났다는 것을 알려주는 에러이다. 만약에 exception이 잡히지 않으면 exception을 발생시킨 isolate가 중단되고 해당 isolate와 프로그램이 끝나게 된다.
 
