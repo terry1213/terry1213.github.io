@@ -1,5 +1,5 @@
 ---
-title: A tour of the Dart language [0. 목차]
+title: "[Dart] A tour of the Dart language - 0. 목차"
 categories:
 - Dart
 tags:
@@ -23,7 +23,7 @@ Dart 공식 Docs의 [A tour of the Dart language](https://dart.dev/guides/langua
 7.  [Operators](/dart/a-tour-of-the-dart-language-7-operators/)
 8.  [Control flow statements](/dart/a-tour-of-the-dart-language-8-control-flow-statements/)
 9.  [Exceptions](/dart/a-tour-of-the-dart-language-9-exceptions/)
-10.  [~~Classes~~](http://)
+10.  [Classes](/dart/a-tour-of-the-dart-language-10-classes/)
 11.  [~~Generics~~](http://)
 12.  [~~Libraries and visibility~~](http://)
 13.  [~~Asynchrony support~~](http://)

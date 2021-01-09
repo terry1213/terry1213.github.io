@@ -1,5 +1,5 @@
 ---
-title: A tour of the Dart language [7. Operators]
+title: "[Dart] A tour of the Dart language - 7. Operators"
 categories:
 - Dart
 tags:

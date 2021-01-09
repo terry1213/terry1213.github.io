@@ -1,5 +1,5 @@
 ---
-title: A tour of the Dart language [6. Functions]
+title: "[Dart] A tour of the Dart language - 6. Functions"
 categories:
 - Dart
 tags:
