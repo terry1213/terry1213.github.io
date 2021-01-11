@@ -24,7 +24,7 @@ Dart 공식 Docs의 [A tour of the Dart language](https://dart.dev/guides/langua
 8.  [Control flow statements](/dart/a-tour-of-the-dart-language-8-control-flow-statements/)
 9.  [Exceptions](/dart/a-tour-of-the-dart-language-9-exceptions/)
 10.  [Classes](/dart/a-tour-of-the-dart-language-10-classes/)
-11.  [~~Generics~~](http://)
+11.  [Generics](/dart/darta-tour-of-the-dart-language-11-generics/)
 12.  [~~Libraries and visibility~~](http://)
 13.  [~~Asynchrony support~~](http://)
 14.  [~~Generators~~](http://)
