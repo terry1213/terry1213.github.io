@@ -27,7 +27,7 @@ Dart 공식 Docs의 [A tour of the Dart language](https://dart.dev/guides/langua
 11.  [Generics](/dart/darta-tour-of-the-dart-language-11-generics/)
 12.  [Libraries and visibility](/dart/dart-a-tour-of-the-dart-language-12-libraries-and-visibility/)
 13.  [Asynchrony support](/dart/dart-a-tour-of-the-dart-language-13-asynchrony-support/)
-14.  [~~Generators~~](http://)
+14.  [Generators](/dart/dart-a-tour-of-the-dart-language-14-generators/)
 15.  [~~Callable classes~~](http://)
 16.  [~~Isolates~~](http://)
 17.  [~~Typedefs~~](http://)
