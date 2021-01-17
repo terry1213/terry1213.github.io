@@ -6,7 +6,7 @@ tags:
 - Mobile
 ---
 
-## Firebase Analytics를 통해 어떤 일을 할 수 있을까?
+## Firebase Analytics이란?
 
 Google Analytics는 유저의 앱 사용과 행동 패턴에 대한 정보를 무료료 제공하는 서비스다. Analytics 리포트는 사용자의 행동을 명확하게 알 수 있게 도와주며 이를 통해 앱 마케팅 및 성능 최적화를 효과적으로 할 수 있다.
 
@@ -52,12 +52,23 @@ $ flutter pub get
 $ flutter run
 ```
 
-## firebase_analytics 패키지 사용법
+## iOS/Android 개별 설정
 
-### firebase_analytics에서 제공하는 표준 메소드 목록
+[iOS 설정](https://firebase.google.com/docs/analytics/get-started?hl=ko&platform=iOS#java)
+
+[Android 설정](https://firebase.google.com/docs/analytics/get-started?hl=ko&platform=android#java)
+
+## 사용하려는 파일에서 firebase_analytics를 import
+
+``` dart
+import 'package:firebase_analytics/firebase_analytics.dart';
+```
+
+## firebase_analytics에서 제공하는 표준 메소드 목록
 
 firebase_analytics 패키지의 `FirebaseAnalytics` 클래스에는 자주 사용되는 이벤트 로그에 대한 표준 메소드들이 존재한다.
 
+> 쇼핑 앱을 위한 메소드(`logAddToCart` 등), 게임 앱을 위한 메소드`(logLevelUp` 등), 숙박 앱을 위한 메소드(`logBeginCheckout` 등) 같은 특정 용도의 앱을 위한 메소드는 설명에서 제외했다. 
 ### AppOpen
 
 ``` dart
