@@ -29,7 +29,7 @@ Dart 공식 Docs의 [A tour of the Dart language](https://dart.dev/guides/langua
 13.  [Asynchrony support](/dart/dart-a-tour-of-the-dart-language-13-asynchrony-support/)
 14.  [Generators](/dart/dart-a-tour-of-the-dart-language-14-generators/)
 15.  [Callable classes](/dart/dart-a-tour-of-the-dart-language-15-callable-classes/)
-16.  [~~Isolates~~](http://)
+16.  [Isolates](/dart/dart-a-tour-of-the-dart-language-16-isolates/)
 17.  [~~Typedefs~~](http://)
 18.  [~~Metadata~~](http://)
 19.  [~~Comments~~](http://)
