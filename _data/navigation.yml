@@ -15,7 +15,7 @@ categories:
         url: /categories/#flutter
       - title: "Dart"
         url: /categories/#dart
-      - title: "AndroidStudio"
+      - title: "Android Studio"
         url: /categories/#androidstudio
       - title: "Swift"
         url: /categories/#swift
@@ -33,8 +33,6 @@ categories:
     children:
       - title: "MySQL"
         url: /categories/#mysql
-      - title: "Firebase"
-        url: /categories/#firebase
   - title: "코딩 문제"
     children:
       - title: "백준"
