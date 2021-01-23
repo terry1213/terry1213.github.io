@@ -32,4 +32,4 @@ Dart 공식 Docs의 [A tour of the Dart language](https://dart.dev/guides/langua
 16.  [Isolates](/dart/dart-a-tour-of-the-dart-language-16-isolates/)
 17.  [Typedefs](/dart/dart-a-tour-of-the-dart-language-17-typedefs/)
 18.  [Metadata](/dart/dart-a-tour-of-the-dart-language-18-metadata/)
-19.  [~~Comments~~](http://)
+19.  [Comments](/dart/dart-a-tour-of-the-dart-language-19-comments/)
