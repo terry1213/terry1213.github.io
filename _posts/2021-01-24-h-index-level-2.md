@@ -38,7 +38,7 @@ H-Index는 과학자의 생산성과 영향력을 나타내는 지표입니다. 
 
 ``` javascript
 function solution(citations) {
-    var hIndex = citations.length;
+    var hIndex = 0;
     citations.sort((a,b) => b - a);
     
     for(let i = 0; i < citations.length; i++){
@@ -48,6 +48,6 @@ function solution(citations) {
             break;
     }
     
-    return citations[0] == 0? 0 : hIndex;
+    return hIndex;
 }
 ```
