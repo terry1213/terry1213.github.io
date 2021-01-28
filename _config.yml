@@ -182,11 +182,6 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 # Conversion
 markdown: kramdown
 highlighter: rouge
-kramdown:
-input: GFM
-syntax_highlighter_opts:
-  default_lang: html
-  css_class   : 'syntax'
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
