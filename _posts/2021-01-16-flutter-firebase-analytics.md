@@ -69,6 +69,7 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 firebase_analytics 패키지의 `FirebaseAnalytics` 클래스에는 자주 사용되는 이벤트 로그에 대한 표준 메소드들이 존재한다.
 
 > 쇼핑 앱을 위한 메소드(`logAddToCart` 등), 게임 앱을 위한 메소드`(logLevelUp` 등), 숙박 앱을 위한 메소드(`logBeginCheckout` 등) 같은 특정 용도의 앱을 위한 메소드는 설명에서 제외했다. 
+
 ### AppOpen
 
 ``` dart
