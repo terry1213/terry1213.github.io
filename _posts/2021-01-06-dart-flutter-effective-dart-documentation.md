@@ -1,8 +1,7 @@
 ---
-title: "[Dart][Flutter]Effective Dart: Documentation 정리"
+title: "[Dart] Effective Dart: Documentation 정리"
 categories:
 - Dart
-- Flutter
 tags:
 - Mobile
 ---
