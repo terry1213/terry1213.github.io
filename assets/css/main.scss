@@ -30,3 +30,9 @@ html {
     font-size: 16px; // change to whatever
   }
 }
+
+.language-plaintext {	
+  font-family: $monospace;	
+  font-size: $type-size-5;	
+  background: #E6E6E6;	
+} 
