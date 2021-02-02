@@ -25,6 +25,8 @@ setState() called after dispose()
 
 이 에러는 `this.mounted`를 사용해서 해결할 수 있다. `mounted`는 위젯이 `dispose()`되는 순간 `false`가 되기 때문에, 아래와 같이 `mounted`이 `true`일 때만 `setState()`를 호출하도록 설정하면 된다.
 
+> `mounted`에 대한 [상세 설명](https://api.flutter.dev/flutter/widgets/State/mounted.html){:target="_blank"}.
+
 ``` dart
 if (this.mounted) {
   setState(() {
