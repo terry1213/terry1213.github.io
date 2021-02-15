@@ -238,7 +238,7 @@ Future<int> parseAndRead(data) {
 
 하지만 `obtainFileName()`는 `then()` 콜백 안에서 호출되지 않는다. 따라서 만약 여기서 에러가 발생한다면 해당 동기적 에러는 밖으로 퍼지게 된다.
 
-```
+``` dart
 void main() {
   parseAndRead(data).catchError((e) {
     print("inside catchError");
