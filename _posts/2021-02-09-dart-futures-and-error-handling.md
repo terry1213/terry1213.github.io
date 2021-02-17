@@ -10,7 +10,7 @@ tags:
 
 # Futures and error handling
 
-Dart SDK 1.9 버전부터 비동기식 Dart 코드를 더 쉽게 읽고 쓸 수 있도록 하는 비동기식 지원(asynchrony support)이 추가되었다. 하지만 몇몇 코드들(보통 옛날 코드)에서는 아직 `then()`, `catchError()`, `whenComplete()` 같은 Future method를 사용한다.
+Dart SDK 1.9 버전부터 비동기식 Dart 코드를 더 쉽게 읽고 쓸 수 있도록 하는 비동기식 지원([asynchrony support](/dart/dart-a-tour-of-the-dart-language-13-asynchrony-support/))이 추가되었다. 하지만 몇몇 코드들(보통 옛날 코드)에서는 아직 `then()`, `catchError()`, `whenComplete()` 같은 Future method를 사용한다.
 
 이 페이지에서는 Future method를 사용할 때 발생할 수 있는 문제들을 방지하게 해준다.
 
