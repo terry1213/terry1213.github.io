@@ -30,5 +30,5 @@ flutter가 설치되어 있는 디렉토리로 이동해서 아래의 명령어�
 > 출처: [https://stackoverflow.com/questions/52397496/flutter-upgrade-fail](https://stackoverflow.com/questions/52397496/flutter-upgrade-fail)
 
 ``` console
-git clean -xfd
+git reset head --hard
 ```
