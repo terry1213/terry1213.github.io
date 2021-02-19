@@ -27,8 +27,10 @@ Switching channels failed with error code 1.
 
 flutter가 설치되어 있는 디렉토리로 이동해서 아래의 명령어를 실행하면 된다.
 
-> 출처: [https://stackoverflow.com/questions/52397496/flutter-upgrade-fail](https://stackoverflow.com/questions/52397496/flutter-upgrade-fail)
+> flutter를 설치한 디렉토리는 사람마다 다르기 때문에 본인이 설치한 디렉토리를 알아야한다. 모르겠다면 `which flutter` 명령어를 입력하여 알 수 있다.
 
 ``` console
-git reset head --hard
+git clean -xfd
 ```
+
+> 출처: [https://stackoverflow.com/questions/52397496/flutter-upgrade-fail](https://stackoverflow.com/questions/52397496/flutter-upgrade-fail)
