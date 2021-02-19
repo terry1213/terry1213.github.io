@@ -21,18 +21,18 @@ tags:
 
 ![Example1](/assets/apache tomcat/change port number/Example1.png){: width="490" height="100"}
 
-**conf** 디렉토리로 들어간다.
+`conf` 디렉토리로 들어간다.
 
 ![Example2](/assets/apache tomcat/change port number/Example2.png)
 
-**conf** 디렉토리 안에 있는 **server.xml** 파일을 연다.
+`conf` 디렉토리 안에 있는 `server.xml` 파일을 연다.
 
 ![Example3](/assets/apache tomcat/change port number/Example3.png){: width="400" height="100"}
 
- **server.xml** 파일에서 위와 같은 부분을 찾아서 port 를 **80**으로 바꿔준다.
+ `server.xml` 파일에서 위와 같은 부분을 찾아서 `port`를 `80`으로 바꿔준다.
 
 ## 변경 확인
 
 파일 저장 후 나와서 아파치 톰캣 서버를 재시작한다.
 
-http://yourApacheTomcatServer.com/ 로 접속 시 정상적으로 사이트가 뜬다면 포트 넘버가 성공적으로 변경된 것이다.
+`http://yourApacheTomcatServer.com/`로 접속 시 정상적으로 사이트가 뜬다면 포트 넘버가 성공적으로 변경된 것이다.
