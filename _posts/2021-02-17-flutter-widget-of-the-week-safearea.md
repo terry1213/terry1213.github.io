@@ -26,29 +26,23 @@ tags:
   <summary>예시 1에 대한 코드 펼치기/접기</summary>
 
 ``` dart
-class SafeAreaExample1 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-
-    return Scaffold(
-      body: SafeArea(
-        child: Container(
-          color: Colors.yellow,
-          child: Center(
-            child: Text(
-              'SafeArea',
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 40,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+Scaffold(
+  body: SafeArea(
+    child: Container(
+      color: Colors.yellow,
+      child: Center(
+        child: Text(
+          'SafeArea',
+          style: TextStyle(
+            color: Colors.blue,
+            fontSize: 40,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
-    );
-  }
-}
+    ),
+  ),
+)
 ```
 
 </details>
@@ -65,19 +59,13 @@ class SafeAreaExample1 extends StatelessWidget {
   <summary>예시 2에 대한 코드 펼치기/접기</summary>
 
 ``` dart
-class SafeAreaExample2 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-
-    return Scaffold(
-      body: SafeArea(
-        child: ListView(
-          children: List.generate(50, (index) => Text('SafeArea Example $index')),
-        ),
-      ),
-    );
-  }
-}
+Scaffold(
+  body: SafeArea(
+    child: ListView(
+      children: List.generate(50, (index) => Text('SafeArea Example $index')),
+    ),
+  ),
+)
 ```
 
 </details>
@@ -113,18 +101,12 @@ class SafeAreaExample2 extends StatelessWidget {
   <summary>maintainBottomViewPadding 테스트 코드 펼치기/접기</summary>
 
 ``` dart
-class MaintainBottomViewPaddingExample extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-
-    return SafeArea(
-      maintainBottomViewPadding: true,
-      child: Scaffold(
-        body: TextField(),
-      ),
-    );
-  }
-}
+Scaffold(
+  body: SafeArea(
+    maintainBottomViewPadding: true,
+    child: TextField(),
+  ),
+)
 ```
 
 </details>

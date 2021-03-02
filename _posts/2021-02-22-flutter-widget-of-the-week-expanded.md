@@ -27,62 +27,52 @@ tags:
   <summary>기본 예시에 대한 코드 펼치기/접기</summary>
 
 ``` dart
-class ExpandedExample extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Expanded Example'),
-      ),
-      body: Center(
-        child: Column(
-          children: [
-            Container(
-              color: Colors.yellow,
-              height: 100,
-              width: 200,
-              child: Center(
-                child: Text(
-                  'No Expanded',
-                  style: TextStyle(
-                    fontSize: 30,
-                  ),
-                ),
-              ),
+Center(
+  child: Column(
+    children: [
+      Container(
+        color: Colors.yellow,
+        height: 100,
+        width: 200,
+        child: Center(
+          child: Text(
+            'No Expanded',
+            style: TextStyle(
+              fontSize: 30,
             ),
-            Container(
-              color: Colors.green,
-              height: 100,
-              width: 200,
-              child: Center(
-                child: Text(
-                  'No Expanded',
-                  style: TextStyle(
-                    fontSize: 30,
-                  ),
-                ),
-              ),
-            ),
-            Expanded(
-              child: Container(
-                color: Colors.red,
-                width: 200,
-                child: Center(
-                  child: Text(
-                    'Expanded',
-                    style: TextStyle(
-                      fontSize: 30,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ],
+          ),
         ),
       ),
-    );
-  }
-}
+      Container(
+        color: Colors.green,
+        height: 100,
+        width: 200,
+        child: Center(
+          child: Text(
+            'No Expanded',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+        ),
+      ),
+      Expanded(
+        child: Container(
+          color: Colors.red,
+          width: 200,
+          child: Center(
+            child: Text(
+              'Expanded',
+              style: TextStyle(
+                fontSize: 30,
+              ),
+            ),
+          ),
+        ),
+      ),
+    ],
+  ),
+),
 ```
 
 </details>
@@ -107,65 +97,55 @@ class ExpandedExample extends StatelessWidget {
   <summary>flex 예시에 대한 코드 펼치기/접기</summary>
 
 ``` dart
-class ExpandedExample extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Expanded Example'),
-      ),
-      body: Center(
-        child: Column(
-          children: [
-            Container(
-              color: Colors.yellow,
-              height: 100,
-              width: 200,
-              child: Center(
-                child: Text(
-                  'No Expanded',
-                  style: TextStyle(
-                    fontSize: 30,
-                  ),
-                ),
-              ),
+Center(
+  child: Column(
+    children: [
+      Container(
+        color: Colors.yellow,
+        height: 100,
+        width: 200,
+        child: Center(
+          child: Text(
+            'No Expanded',
+            style: TextStyle(
+              fontSize: 30,
             ),
-            Expanded(
-              flex: 2,
-              child: Container(
-                color: Colors.green,
-                width: 200,
-                child: Center(
-                  child: Text(
-                    'Expanded\nflex: 2',
-                    style: TextStyle(
-                      fontSize: 30,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Expanded(
-              flex: 1,
-              child: Container(
-                color: Colors.red,
-                width: 200,
-                child: Center(
-                  child: Text(
-                    'Expanded\nflex: 1',
-                    style: TextStyle(
-                      fontSize: 30,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ],
+          ),
         ),
       ),
-    );
-  }
-}
+      Expanded(
+        flex: 2,
+        child: Container(
+          color: Colors.green,
+          width: 200,
+          child: Center(
+            child: Text(
+              'Expanded\nflex: 2',
+              style: TextStyle(
+                fontSize: 30,
+              ),
+            ),
+          ),
+        ),
+      ),
+      Expanded(
+        flex: 1,
+        child: Container(
+          color: Colors.red,
+          width: 200,
+          child: Center(
+            child: Text(
+              'Expanded\nflex: 1',
+              style: TextStyle(
+                fontSize: 30,
+              ),
+            ),
+          ),
+        ),
+      ),
+    ],
+  ),
+),
 ```
 
 </details>
