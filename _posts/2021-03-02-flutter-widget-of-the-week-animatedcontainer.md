@@ -62,7 +62,7 @@ Center(
 
 | Property             	| Description 	| Type               	| Default       	|
 |----------------------	|-------------	|--------------------	|---------------	|
-| children             	| AnimatedContainer을 적용할 Widget	| Widget             	|               	|
+| child             	| AnimatedContainer을 적용할 Widget	| Widget             	|               	|
 | alignment            	| child 배치 방식	| AlignmentGeometry  	|               	|
 | constraints          	| child에 적용할 추가적인 제약사항(constraints)	| BoxConstraints     	|               	|
 | curve                	| 애니메이션 종류	| Curve              	| Curves.linear 	|
