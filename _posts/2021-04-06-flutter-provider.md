@@ -1,5 +1,5 @@
 ---
-title: "[Flutter] Provider 정리하기"
+title: "[Flutter] Provider를 통해 상태 관리하기"
 categories:
 - Flutter
 tags:
