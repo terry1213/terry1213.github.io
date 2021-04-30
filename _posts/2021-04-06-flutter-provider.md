@@ -71,7 +71,7 @@ import 'package:provider/provider.dart';
 
 Provider를 생성하는 방법은 정말 다양한다. 용도에 따라 적합한 방법을 선택하여 사용한다.
 
-### 1.1 `Provider`
+### 1.1. `Provider`
 
 `Provider`는 제일 기본적인 Provider를 생성하는 방법이다.
 
@@ -206,7 +206,7 @@ class Example extends StatelessWidget {
 
 > 원래는 차이점이 존재했다. `Provider.of<T>(context)`,`Provider.of<T>(context, listen: false)`는 모든 조건에서 사용할 수 있지만, `context.watch<T>()`, `context.read<T>()`는 특정 조건에서 사용하지 못한다는 점이 달랐다. 예를들어 `StatelessWidget.build`, `State.build` 안에서는 `context.read<T>()`를 사용하지 못했다. 하지만 이런 제약들은 4.3.3 버전부터 없어졌다.
 
-#### 2.2.1 (적용) `Provider.of(context)` 사용
+#### 2.2.1. (적용) `Provider.of(context)` 사용
 
 ``` dart
 class Example extends StatelessWidget {
