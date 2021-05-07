@@ -374,3 +374,252 @@ class NextPage extends StatelessWidget {
 ```
 
 </details>
+
+## 2. 상태(State) 관리
+
+GetX에는 크게 두가지의 상태 관리법이 존재한다. 이 두가지의 상태 관리법을 아주 간단한 예시인 Counter( 버튼 클릭 시에 숫자가 1씩 증가) 예시를 통해 설명해보겠다.
+
+### 2.1. simple 방식
+
+첫번째 방식은 비교적 간단한(simple) 방식이다. 이 방식은 이후에 설명할 reactive 방식보다 메모리를 적게 사용한다는 장점이 있다.
+
+#### 2.1.1. 변수 선언
+
+`GetxController`를 extend하는 `Controller` 클래스를 선언하고, 초기값을 0으로 설정한 `count1` 변수를 선언한다.
+
+``` dart
+class Controller extends GetxController {
+  var count1 = 0;
+}
+```
+
+#### 2.1.2. GetBuilder()
+
+`GetBuilder`을 통해 화면에 `count1` 변수를 보여준다. 이때 `init`을 설정하지 않으면 에러가 발생하는 것을 유의하자.
+
+``` dart
+GetBuilder<Controller>(
+  init: Controller(),
+  builder: (_) => Text(
+    'clicks: ${_.count1}',
+   ),
+)
+```
+
+![](/assets/flutter/GetX/GetBuilder.png){: width="300" height="500"}
+
+`count1`의 초기값인 0이 보이는 것을 확인할 수 있다.
+
+#### 2.1.3. update()
+
+이제 `count1` 변수를 증가시켜야 한다. 또한 증가할 때 이를 화면에 알려줘야한다. 이를 위해 `update()` 함수를 사용한다.
+
+``` dart
+class Controller extends GetxController {
+  var count1 = 0;
+
+  void increment1() {
+    count1++;
+    update();
+  }
+}
+```
+
+`update()`는 `ChangeNotifier`의 `notifyListeners()`와 동일하게 생각하면 된다. `count1++`를 통해 `count1`을 증가시킨 후 `update()`를 호출하는 `increment1()`을 정의한다.
+
+#### 2.1.4. Get.find()
+
+> `Get.find()`, `Get.put()`는 순서상 여기에 들어가는 것이 매끄러워서 넣은 것이지, simple 방식에 해당하는 것은 아니다. 두 방식(simple, reactive) 모두에서 사용된다.
+
+`Get.find()`을 사용하여 `increment1()`을 호출하는 버튼을 만들어 텍스트 아래에 배치한다.
+
+``` dart
+TextButton(onPressed: Get.find<Controller>().increment1, child: Text('increment1'))
+```
+
+하지만 리빌드해보면 `Get.find<Controller>()`에서 에러가 발생할 것이다. 이는 `Get.find<Controller>()`가 `Controller`를 찾는 시점이 `GetBuilder()`의 `init`에서 `Controller`를 등록하기 이전이라서 그렇다.
+
+#### 2.1.5. Get.put()
+
+> `Get.find()`, `Get.put()`는 순서상 여기에 들어가는 것이 매끄러워서 넣은 것이지, simple 방식에 해당하는 것은 아니다. 두 방식(simple, reactive) 모두에서 사용된다.
+
+이 문제를 해결하기 위해서 `Get.put()`을 사용한다.
+
+우선 `build()` 메소드 내부에 `controller` 변수를 선언하며, 이때 `Get.put()`를 통해 `Controller`를 등록한다.
+
+``` dart
+@override
+Widget build(BuildContext context) {
+  final controller = Get.put(Controller());
+  // ...
+}
+```
+
+`controller` 변수를 선언하면서  `Controller`를 등록했기 때문에 `GetBuilder`에서 또 등록할 필요가 없다. 따라서 `init` 부분을 지운다.
+
+``` dart
+GetBuilder<Controller>(
+  // init 부분 삭제.
+  builder: (_) => Text(
+    'clicks: ${_.count1}',
+  ),
+)
+```
+
+버튼에서 `increment1()`를 호출할 때, `Get.find()` 대신 `controller` 변수를 사용한다.
+
+``` dart
+TextButton(onPressed: controller.increment1, child: Text('increment1')),
+```
+
+![](/assets/flutter/GetX/count1button.gif){: width="300" height="500"}
+
+리빌드 해보면 에러가 발생하지 않을 것이다. 또한 버튼을 클릭해보면 화면의 숫자가 증가하는 것을 확인할 수 있다.
+
+### 2.2. reactive 방식
+
+simple 방식은 메모리를 적게 사용한다는 장점이 있었다. 그렇다면 reactive 방식은 무슨 장점이 있고 어느 경우에 사용할까?
+
+reactive 방식에는 simple 방식에는 없는 특별한 기능이 있다. 이에 대해선 reactive 방식에 대한 기본 설명 이후에 정리해보도록 하겠다.
+
+#### 2.2.1. Rx(observable 변수) 선언
+
+reactive 방식에서는 observable 변수라는 특별한 변수를 사용한다. observable 변수를 Rx라고도 부른다. 이런 Rx를 선언하는 방법에는 아래와 같이 3가지가 있다.
+
+1. Value.obs
+2. Rx\<Type>(Value)
+3. RxType(Value)
+
+이 중 가장 간단한 1번 방법을 주로 사용한다. 우리도 1번 방법을 사용하여 `count2` 변수를 정의해보자.
+
+``` dart
+  var count2 = 0.obs; // 1번
+  var count2 = Rx<int>(0); // 2번
+  var count2 = RxInt(0); // 3번
+```
+
+#### 2.2.2.  Rx(observable 변수)의 값 접근 .value
+
+Rx의 값을 접근할 때는 일반적인 변수의 값의 경우와 다르게 `.value`를 통해 접근할 수 있다. 여기서 주의해야할 점이 있다. `String`과 `int` 같은 primitive type에는 `.value`를 사용해야하지만, `List`에서는 `.value`가 필요없다. dart api가 리스트에서만 `.value` 없이도 값에 접근할 수 있게 해주기 때문이다.
+
+이 점은 좀 불편하다고 생각했다. `.value`를 붙이는 것은 더 길게 써야하는 것이고, 그 방법 마저도 `List`라는 예외가 존재하기 때문이다. 이 이유에 대해서 찾아보니, code generator와 decoration을 사용하면 이 불편함을 해결할 수 있지만, 외부 종속성을 없애고자 그대로 두었다고 한다.
+
+``` dart
+void increment2() => count2.value++;
+```
+
+`.value`를 사용해서 `count2`의 값을 1 증가시키는 `increment2()` 함수를 정의했다. reactive 방식에선 `update()` 함수가 필요하지 않다.
+
+#### 2.2.3. GetX()
+
+simple 방식의 `GetBuilder`과 같은 역할을 하는 것이 `GetX`이다. 그럼 `GetX`를 사용해서 `count2`의 값을 보여주는 텍스트를 만들어보자.
+
+``` dart
+GetX<Controller>(
+  builder: (_) => Text(
+    'clicks: ${_.count2.value}',
+  ),
+),
+```
+
+이전 simple 방식 예시(`count1`) 예시에 `count2` 코드를 추가하고 있기 때문에 이미 `Get.put()`을 통해 `Controller`를 등록한 상태이다. 따라서 `GetX`에 `init` 부분을 넣지 않았다. 필요한 경우에는 `GetBuilder`에서처럼 `init`을 통해 `Controller`를 등록할 수 있다.
+
+![](/assets/flutter/GetX/GetX.png){: width="300" height="500"}
+
+`count2`의 초기값인 0이 보이는 것을 확인할 수 있다.
+
+#### 2.2.4. Obx()
+
+`GetX`보다 더 간단한 방법이 있다. 바로 `Obx()`를 사용하는 것이다. `Obx()`의 경우 사용할 컨트롤러의 종류를 따로 명시할 필요가 없고, 보여줄 위젯만 리턴하면 된다. 하지만 이 방법은 무조건 `Get.put()`을 필요로 한다.
+
+`Obx`를 사용해서 `count2`의 값을 보여주는 텍스트를 만들어서 `GetX`를 통해 만든 텍스트 하단에 배치하자.
+
+``` dart
+Obx(() {
+  return Text(
+    'clicks: ${controller.count2.value}',
+  );
+}),
+```
+
+이미 앞선 예시에서 `Get.put()`을 통해 선언한 `controller`가 존재하기 때문에 이를 바로 사용했다.
+
+![](/assets/flutter/GetX/Obx.png){: width="300" height="500"}
+
+`count2`의 초기값인 0이 보이는 것을 확인할 수 있다.
+
+마지막으로 `count1` 예시에서처럼 `count2`를 증가시키는 버튼을 만든다.
+
+``` dart
+TextButton(onPressed: controller.increment2, child: Text('increment2'))
+```
+
+![](/assets/flutter/GetX/count2button.gif){: width="300" height="500"}
+
+버튼을 클릭하면 `GetX()`를 통해 만든 텍스트와 `Obx()`를 통해 만든 텍스트의 숫자가 모두 증가하는 것을 확인할 수 있다.
+
+### 상태 관리 전체 코드
+{:.no_toc}
+
+<details markdown="1">
+ <summary> 상태 관리 전체 코드 펼치기/접기 </summary>
+
+``` dart
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import 'controller.dart';
+
+void main() {
+  runApp(App());
+}
+
+class App extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Getx example',
+      home: HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final controller = Get.put(Controller());
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Getx example'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            GetBuilder<Controller>(
+              init: Controller(),
+              builder: (_) => Text(
+                'clicks: ${_.count1}',
+              ),
+            ),
+            TextButton(onPressed: controller.increment1, child: Text('increment1')),
+            GetX<Controller>(
+              builder: (_) => Text(
+                'clicks: ${_.count2.value}',
+              ),
+            ),
+            Obx(() {
+              return Text(
+                'clicks: ${controller.count2.value}',
+              );
+            }),
+            TextButton(onPressed: controller.increment2, child: Text('increment2')),
+          ],
+        ),
+      ),
+    );
+  }
+}
+```
+
+</details>
