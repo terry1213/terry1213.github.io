@@ -558,6 +558,70 @@ TextButton(onPressed: controller.increment2, child: Text('increment2'))
 
 버튼을 클릭하면 `GetX()`를 통해 만든 텍스트와 `Obx()`를 통해 만든 텍스트의 숫자가 모두 증가하는 것을 확인할 수 있다.
 
+#### 2.2.5 Workers
+
+이전에 말했던 reactive 방식에서만 사용할 수 있는 특별한 기능들이 바로 Workers이다. Workers를 사용하면 Rx들의 변화를 감지하고 다양한 상황 별로 적절한 대응을 하도록 구현할 수 있다.
+
+Workers에는 아래와 같이 총 4가지가 있다.
+
+``` dart
+// count2가 처음으로 변경되었을 때만 호출된다.
+once(count2, (_) {
+  print('$_이 처음으로 변경되었습니다.');
+});
+// count2가 변경될 때마다 호출된다.
+ever(count2, (_) {
+  print('$_이 변경되었습니다.');
+});
+// count2가 변경되다가 마지막 변경 후, 1초간 변경이 없을 때 호출된다.
+debounce(
+  count2,
+  (_) {
+    print('$_가 마지막으로 변경된 이후, 1초간 변경이 없습니다.');
+  },
+  time: Duration(seconds: 1),
+);
+// count2가 변경되고 있는 동안, 1초마다 호출된다.
+interval(
+  count2,
+  (_) {
+    print('$_가 변경되는 중입니다.(1초마다 호출)');
+  },
+  time: Duration(seconds: 1),
+);
+```
+
+이 4가지의 Workers를 `Controller`에 적용해보자. 
+
+``` dart
+void onInit() {
+  super.onInit();
+
+  once(count2, (_) {
+    print('$_이 처음으로 변경되었습니다.');
+  });
+  ever(count2, (_) {
+    print('$_이 변경되었습니다.');
+  });
+  debounce(
+    count2,
+    (_) {
+      print('$_가 마지막으로 변경된 이후, 1초간 변경이 없습니다.');
+    },
+    time: Duration(seconds: 1),
+  );
+  interval(
+    count2,
+    (_) {
+      print('$_가 변경되는 중입니다.(1초마다 호출)');
+    },
+    time: Duration(seconds: 1),
+  );
+}
+```
+
+`Controller`에 `onInit()` `override`하고, `super.onInit()`을 제일 먼저 호출한다. 그 다음 사용하고자 하는 Worker를 등록해주면 된다.
+
 ### 상태 관리 전체 코드
 {:.no_toc}
 
@@ -582,6 +646,32 @@ class Controller extends GetxController {
   }
 
   void increment2() => count2.value++;
+
+  @override
+  void onInit() {
+    super.onInit();
+
+    once(count2, (_) {
+      print('$_이 처음으로 변경되었습니다.');
+    });
+    ever(count2, (_) {
+      print('$_이 변경되었습니다.');
+    });
+    debounce(
+      count2,
+      (_) {
+        print('$_가 마지막으로 변경된 이후, 1초간 변경이 없습니다.');
+      },
+      time: Duration(seconds: 1),
+    );
+    interval(
+      count2,
+      (_) {
+        print('$_가 변경되는 중입니다.(1초마다 호출)');
+      },
+      time: Duration(seconds: 1),
+    );
+  }
 }
 ```
 
