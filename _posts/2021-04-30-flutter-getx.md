@@ -558,7 +558,7 @@ TextButton(onPressed: controller.increment2, child: Text('increment2'))
 
 버튼을 클릭하면 `GetX()`를 통해 만든 텍스트와 `Obx()`를 통해 만든 텍스트의 숫자가 모두 증가하는 것을 확인할 수 있다.
 
-#### 2.2.5 Workers
+#### 2.2.5. Workers
 
 이전에 말했던 reactive 방식에서만 사용할 수 있는 특별한 기능들이 바로 Workers이다. Workers를 사용하면 Rx들의 변화를 감지하고 다양한 상황 별로 적절한 대응을 하도록 구현할 수 있다.
 
