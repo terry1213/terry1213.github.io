@@ -564,6 +564,30 @@ TextButton(onPressed: controller.increment2, child: Text('increment2'))
 <details markdown="1">
  <summary> 상태 관리 전체 코드 펼치기/접기 </summary>
 
+#### controller.dart
+{:.no_toc}
+
+``` dart
+import 'package:get/get.dart';
+
+class Controller extends GetxController {
+  var count1 = 0;
+  var count2 = 0.obs;
+  // var count2 = Rx<int>(0);
+  // var count2 = RxInt(0);
+
+  void increment1() {
+    count1++;
+    update();
+  }
+
+  void increment2() => count2.value++;
+}
+```
+
+#### main.dart
+{:.no_toc}
+
 ``` dart
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
