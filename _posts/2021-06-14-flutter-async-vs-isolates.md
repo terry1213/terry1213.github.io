@@ -1,5 +1,5 @@
 ---
-title: "[Flutter] Async vs Isolates"
+title: "[Flutter/Decoding Flutter] Async vs Isolates"
 categories:
 - Flutter
 tags:
