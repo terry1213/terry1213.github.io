@@ -4,7 +4,6 @@ title: "[Xcode] ARCHS[@]: unbound variable Command PhaseScriptExecution failed w
 categories:
 - Xcode
 tags:
-- iOS
 - Error
 ---
 

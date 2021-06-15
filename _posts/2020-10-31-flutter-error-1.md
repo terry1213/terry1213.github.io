@@ -4,9 +4,6 @@ title: '[Flutter] "/path/to/Runner.app: resource fork, Finder information, or si
 categories:
 - Flutter
 tags:
-- Mobile
-- Android
-- iOS
 - Error
 ---
 

@@ -2,10 +2,6 @@
 title: "[Flutter] StatefulWidget & setState() 정리하기"
 categories:
 - Flutter
-tags:
-- Mobile
-- iOS
-- Android
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AqCMFXEmf3w?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>

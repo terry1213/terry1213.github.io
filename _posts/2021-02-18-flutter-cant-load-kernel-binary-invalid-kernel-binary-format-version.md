@@ -3,9 +3,6 @@ title: "[Flutter] Can't load Kernel binary: Invalid kernel binary format version
 categories:
 - Flutter
 tags:
-- Mobile
-- iOS
-- Android
 - Error
 ---
 

@@ -3,7 +3,6 @@ title: "[Xcode] The use of Swift 3 @objc inference in Swift 4 mode is deprecated
 categories:
 - Xcode
 tags:
-- iOS
 - Warning
 ---
 

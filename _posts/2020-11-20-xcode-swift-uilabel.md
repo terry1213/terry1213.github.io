@@ -1,5 +1,7 @@
 ---
 title: "[Xcode] [Swift] UILabel 기본 정리"
+categories:
+- Xcode
 ---
 
 ## UILabel 생성 방법

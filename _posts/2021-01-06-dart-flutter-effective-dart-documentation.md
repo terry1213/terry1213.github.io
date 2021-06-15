@@ -3,7 +3,7 @@ title: "[Dart] Effective Dart: Documentation 정리"
 categories:
 - Dart
 tags:
-- Mobile
+- Document
 ---
 
 [Dart 공식 문서 원본 이동](https://dart.dev/guides/language/effective-dart/documentation){:target="_blank"} 

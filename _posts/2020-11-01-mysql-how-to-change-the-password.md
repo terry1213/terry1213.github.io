@@ -3,7 +3,7 @@ title: "[MySQL] 비밀번호 변경 방법 (How to change the password)"
 categories:
 - MySQL
 tags:
-- Database
+- Tip
 ---
 
 이번에는 MySQL 비밀번호 변경 방법에 대해서 정리해보자.

@@ -3,9 +3,7 @@ title: "[Flutter/Decoding Flutter] Async vs Isolates"
 categories:
 - Flutter
 tags:
-- Mobile
-- iOS
-- Android
+- DecodingFlutter
 ---
 
 ## Async vs Isolates 유튜브 영상

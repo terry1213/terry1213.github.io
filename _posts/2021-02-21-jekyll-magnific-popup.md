@@ -3,7 +3,7 @@ title: "[Jekyll] Magnific Popup을 통한 이미지 확대 기능 추가"
 categories:
 - Blog
 tags:
-- Jekyll
+- Tip
 ---
 
 블로그에 글을 올리다 보니 몇몇 사진의 경우 확대해서 볼 수 있으면 좋겠다고 생각했다. 링크를 사용해서 간편하게 구현할 수 있지만 보는 입장에선 불편할 것 같았다. 그래서 다른 url로 이동하지 않고 게시글 내에서 확대할 수 있게 하는 방법을 찾다보니 Magnific Popup라는 것을 알게되었다.

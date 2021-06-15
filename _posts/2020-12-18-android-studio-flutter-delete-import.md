@@ -3,7 +3,6 @@ title: "[Android Studio] 사용하지 않는 import 자동 삭제"
 categories:
 - AndroidStudio
 tags:
-- Mobile
 - Tip
 ---
 

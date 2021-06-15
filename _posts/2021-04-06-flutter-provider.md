@@ -3,9 +3,7 @@ title: "[Flutter] Provider를 통해 상태 관리하기"
 categories:
 - Flutter
 tags:
-- Mobile
-- iOS
-- Android
+- Package
 ---
 
 Flutter를 통해 개발을 진행하다보면 상태(State) 관리가 매우 중요하다는 것을 느낄 수 있다.

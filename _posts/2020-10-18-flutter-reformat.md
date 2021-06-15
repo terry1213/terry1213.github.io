@@ -3,9 +3,6 @@ title: "[Flutter] 코드 자동 정렬(Reformat) 하는 법"
 categories:
 - Flutter
 tags:
-- Mobile
-- iOS
-- Android
 - Tip
 ---
 

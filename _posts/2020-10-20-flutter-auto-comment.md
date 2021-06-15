@@ -3,9 +3,6 @@ title: "[Flutter] 자동 주석 기능(Auto Comment)"
 categories:
 - Flutter
 tags:
-- Mobile
-- iOS
-- Android
 - Tip
 ---
 

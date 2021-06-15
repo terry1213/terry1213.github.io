@@ -3,8 +3,7 @@ title: "[Apache Tomcat] 아파치 톰캣 서버 포트 변경하는 방법 (How 
 categories:
 - Apache
 tags:
-- Web
-- Server
+- Tip
 ---
 
 아파치 톰캣 서버에서 포트를 변경하는 방법에 대해서 정리해보고자 한다. 

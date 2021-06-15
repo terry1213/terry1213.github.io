@@ -3,9 +3,6 @@ title: '[Flutter] Could not find a file named "pubspec.yaml" 에러'
 categories:
 - Flutter
 tags:
-- Mobile
-- Android
-- iOS
 - Error
 ---
 

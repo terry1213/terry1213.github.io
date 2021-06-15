@@ -3,7 +3,7 @@ title: "[Xcode] 새 프로젝트 생성 (Create New Project)"
 categories:
 - Xcode
 tags:
-- iOS
+- Tip
 ---
 
 ## 새 프로젝트 생성 방법

@@ -3,9 +3,7 @@ title: "[Flutter] GetX 정리"
 categories:
 - Flutter
 tags:
-- Mobile
-- iOS
-- Android
+- Package
 ---
 
 최근 주변에 상태 관리 툴로 GetX를 사용하는 사람들이 많아지고 있다. '나도 GetX를 한번 사용해볼까'하는 생각도 들었지만, 얼마 전에 Provider를 배웠고 아직 익숙해지고 있는 중이라 나중에 사용해보기로 마음먹었다.

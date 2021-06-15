@@ -3,7 +3,7 @@ title: "[Dart] A tour of the Dart language - 1. A basic Dart program"
 categories:
 - Dart
 tags:
-- Mobile
+- Document
 ---
 
 [목차로 돌아가기](/dart/a-tour-of-the-dart-language/)

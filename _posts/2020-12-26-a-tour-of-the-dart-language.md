@@ -3,7 +3,7 @@ title: "[Dart] A tour of the Dart language - 0. 목차"
 categories:
 - Dart
 tags:
-- Mobile
+- Document
 ---
 
 Dart 공식 Docs의 [A tour of the Dart language](https://dart.dev/guides/language/language-tour#a-basic-dart-program){:target="_blank"}에 대해서 정리해보자.

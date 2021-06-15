@@ -3,9 +3,6 @@ title: "[Flutter] 채널 변경 및 업그레이드 실패 에러(git error)"
 categories:
 - Flutter
 tags:
-- Mobile
-- iOS
-- Android
 - Error
 ---
 

@@ -3,9 +3,7 @@ title: "[Flutter/Widget of the Week] SafeArea"
 categories:
 - Flutter
 tags:
-- iOS
-- Android
-- Mobile
+- WidgetOfTheWeek
 ---
 
 ## Widget of the Week 유튜브 영상

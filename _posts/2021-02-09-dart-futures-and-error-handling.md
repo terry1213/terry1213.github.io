@@ -3,7 +3,7 @@ title: "[Dart] Futures and error handling 정리"
 categories:
 - Dart
 tags:
-- Mobile
+- Document
 ---
 
 [Dart 공식 문서 원본 이동](https://dart.dev/guides/libraries/futures-error-handling){:target="_blank"} 

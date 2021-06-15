@@ -3,7 +3,7 @@ title: "[Flutter] Firebase Analytics 사용법"
 categories:
 - Flutter
 tags:
-- Mobile
+- Package
 ---
 
 ## Firebase Analytics이란?

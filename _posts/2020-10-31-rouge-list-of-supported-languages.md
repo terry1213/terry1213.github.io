@@ -3,8 +3,7 @@ title: "[Rouge] 지원하는 언어 리스트 (List of supported languages)"
 categories:
 - Blog
 tags:
-- Rouge
-- Jekyll
+- Tip
 ---
 
 블로그를 작성할 때 자주 사용하는 것이 Rouge이다. Rouge를 통해 다양한 언어의 코드를 보기 좋게 하이라이트(highlight) 할 수 있기 때문이다. 그런데 내가 지금까지 블로그에 사용했던 언어 종류만 봐도 C, JavaScript, Swift, Dart, Shell 5가지가 된다. 새로운 언어를 사용할 때마다 이 언어를 Rouge에서 지원해주는지 검색하는 과정이 귀찮았다.

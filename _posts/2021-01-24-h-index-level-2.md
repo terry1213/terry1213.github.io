@@ -3,7 +3,6 @@ title: "[프로그래머스] H-Index - 정렬 Level 2"
 categories:
 - Programmers
 tags:
-- JavaScript
 - 코딩문제
 ---
 

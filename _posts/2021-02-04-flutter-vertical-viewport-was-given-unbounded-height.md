@@ -3,9 +3,6 @@ title: "[Flutter] Vertical viewport was given unbounded height 에러"
 categories:
 - Flutter
 tags:
-- Mobile
-- iOS
-- Android
 - Error
 ---
 

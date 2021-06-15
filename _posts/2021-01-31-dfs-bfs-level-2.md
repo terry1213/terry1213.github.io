@@ -3,7 +3,6 @@ title: "[프로그래머스] 타겟 넘버 - 깊이/너비 우선 탐색(DFS/BFS
 categories:
 - Programmers
 tags:
-- JavaScript
 - 코딩문제
 ---
 

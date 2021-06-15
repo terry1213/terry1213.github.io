@@ -3,7 +3,6 @@ title: "[백준 1010번] 다리 놓기 - 다이나믹 프로그래밍(Dynamic pr
 categories:
 - Backjoon
 tags:
-- C언어
 - 코딩문제
 ---
 

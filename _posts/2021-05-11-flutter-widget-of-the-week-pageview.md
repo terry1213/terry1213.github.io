@@ -3,9 +3,7 @@ title: "[Flutter/Widget of the Week] PageView"
 categories:
 - Flutter
 tags:
-- Mobile
-- iOS
-- Android
+- WidgetOfTheWeek
 ---
 
 ## Widget of the Week 유튜브 영상

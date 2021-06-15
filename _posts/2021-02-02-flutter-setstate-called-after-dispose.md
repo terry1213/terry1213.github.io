@@ -3,9 +3,6 @@ title: '[Flutter] "setState() called after dispose()" 에러'
 categories:
 - Flutter
 tags:
-- Mobile
-- iOS
-- Android
 - Error
 ---
 
