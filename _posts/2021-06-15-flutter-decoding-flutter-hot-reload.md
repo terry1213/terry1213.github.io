@@ -18,7 +18,7 @@ tags:
 
 핫 리로드란 어플이 실행되고 있는 상태에서 어플의 상태를 유지하면서 코드의 변경 사항을 적용시켜주는 기능이다.
 
-> 만약 핫 리로드에 대한 자세한 설명이 필요하다면, [여기](https://flutter.dev/docs/development/tools/hot-reload)를 읽어보면 되겠다.
+> 만약 핫 리로드에 대한 자세한 설명이 필요하다면, [여기](https://flutter.dev/docs/development/tools/hot-reload){:target="_blank"}를 읽어보면 되겠다.
 
 그렇다면 핫 리로드는 어떠한 방식으로 이루어지는 걸까?
 
