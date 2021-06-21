@@ -1,5 +1,6 @@
 ---
-title: Dartdoc 실행이 너무 오래 걸린다면? (What if the dartdoc documenting time is too long?)
+title: "[Flutter] Dartdoc 실행이 너무 오래 걸린다면? (What if the dartdoc documenting time is
+  too long?)"
 categories:
 - Flutter
 tags:
