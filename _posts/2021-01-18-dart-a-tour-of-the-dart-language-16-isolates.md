@@ -1,5 +1,5 @@
 ---
-title: "[Dart] A tour of the Dart language - 16. Isolates"
+title: "[Dart/Document] A tour of the Dart language - 16. Isolates"
 categories:
 - Dart
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "[Dart] A tour of the Dart language - 12. Libraries and visibility"
+title: "[Dart/Document] A tour of the Dart language - 12. Libraries and visibility"
 categories:
 - Dart
 tags:

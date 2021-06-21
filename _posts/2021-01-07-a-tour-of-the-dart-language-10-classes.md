@@ -1,5 +1,5 @@
 ---
-title: "[Dart]A tour of the Dart language - 10. Classes"
+title: "[Dart/Document]A tour of the Dart language - 10. Classes"
 categories:
 - Dart
 tags:

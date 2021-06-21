@@ -1,5 +1,5 @@
 ---
-title: "[Dart] A tour of the Dart language - 5. Built-in types"
+title: "[Dart/Document] A tour of the Dart language - 5. Built-in types"
 categories:
 - Dart
 tags:

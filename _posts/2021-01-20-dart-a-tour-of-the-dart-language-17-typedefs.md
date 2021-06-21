@@ -1,5 +1,5 @@
 ---
-title: "[Dart] A tour of the Dart language - 17. Typedefs"
+title: "[Dart/Document] A tour of the Dart language - 17. Typedefs"
 categories:
 - Dart
 tags:

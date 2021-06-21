@@ -1,5 +1,5 @@
 ---
-title: "[Dart] A tour of the Dart language - 4. Variables"
+title: "[Dart/Document] A tour of the Dart language - 4. Variables"
 categories:
 - Dart
 tags:

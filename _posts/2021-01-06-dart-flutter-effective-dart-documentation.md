@@ -1,5 +1,5 @@
 ---
-title: "[Dart] Effective Dart: Documentation 정리"
+title: "[Dart/Document] Effective Dart: Documentation 정리"
 categories:
 - Dart
 tags:

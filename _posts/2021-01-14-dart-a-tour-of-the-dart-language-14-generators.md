@@ -1,5 +1,5 @@
 ---
-title: "[Dart] A tour of the Dart language - 14. Generators"
+title: "[Dart/Document] A tour of the Dart language - 14. Generators"
 categories:
 - Dart
 tags:

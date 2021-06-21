@@ -1,5 +1,5 @@
 ---
-title: "[Dart] A tour of the Dart language - 9. Exceptions"
+title: "[Dart/Document] A tour of the Dart language - 9. Exceptions"
 categories:
 - Dart
 tags:

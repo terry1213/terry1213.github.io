@@ -1,5 +1,5 @@
 ---
-title: "[Dart] A tour of the Dart language - 11. Generics"
+title: "[Dart/Document] A tour of the Dart language - 11. Generics"
 categories:
 - Dart
 tags:

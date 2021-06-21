@@ -1,5 +1,5 @@
 ---
-title: "[Dart] Futures and error handling 정리"
+title: "[Dart/Document] Futures and error handling 정리"
 categories:
 - Dart
 tags:

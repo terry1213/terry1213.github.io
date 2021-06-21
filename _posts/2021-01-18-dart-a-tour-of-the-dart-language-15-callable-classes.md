@@ -1,5 +1,5 @@
 ---
-title: "[Dart] A tour of the Dart language - 15. Callable classes"
+title: "[Dart/Document] A tour of the Dart language - 15. Callable classes"
 categories:
 - Dart
 tags:
