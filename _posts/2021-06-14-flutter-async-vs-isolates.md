@@ -6,7 +6,7 @@ tags:
 - DecodingFlutter
 ---
 
-## Async vs Isolates 유튜브 영상
+## Decoding Flutter 유튜브 영상
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5AxWC49ZMzs?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
