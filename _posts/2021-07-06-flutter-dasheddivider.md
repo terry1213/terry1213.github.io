@@ -19,12 +19,12 @@ Flutter에선 `Divider` 위젯을 기본적으로 제공한다. 대부분의 경
 ### Properties
 
 ``` dart
-final double space;
-final double length;
-final double thickness;
-final Color color;
-final double indent;
-final double endIndent;
+final double? space;
+final double? length;
+final double? thickness;
+final Color? color;
+final double? indent;
+final double? endIndent;
 ```
 
  * `space` : 디바이더의 높이
@@ -38,7 +38,7 @@ final double endIndent;
 
 ``` dart
 const HorizontalDashedDivider(
-    {Key key,
+    {Key? key,
       this.space,
       this.length,
       this.thickness,
