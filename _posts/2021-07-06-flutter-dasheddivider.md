@@ -264,15 +264,15 @@ class DashedDividerExample extends StatelessWidget {
 }
 
 class HorizontalDashedDivider extends StatelessWidget {
-  final double space;
-  final double length;
-  final double thickness;
-  final Color color;
-  final double indent;
-  final double endIndent;
+  final double? space;
+  final double? length;
+  final double? thickness;
+  final Color? color;
+  final double? indent;
+  final double? endIndent;
 
   const HorizontalDashedDivider(
-      {Key key,
+      {Key? key,
         this.space,
         this.length,
         this.thickness,
@@ -328,21 +328,21 @@ class HorizontalDashedDivider extends StatelessWidget {
 }
 
 class VerticalDashedDivider extends StatelessWidget {
-  final double space;
-  final double length;
-  final double thickness;
-  final Color color;
-  final double indent;
-  final double endIndent;
+  final double? space;
+  final double? length;
+  final double? thickness;
+  final Color? color;
+  final double? indent;
+  final double? endIndent;
 
   const VerticalDashedDivider(
-      {Key key,
-      this.space,
-      this.length,
-      this.thickness,
-      this.color,
-      this.indent,
-      this.endIndent})
+      {Key? key,
+        this.space,
+        this.length,
+        this.thickness,
+        this.color,
+        this.indent,
+        this.endIndent})
       : assert(space == null || space >= 0.0),
         assert(length == null || length >= 0.0),
         assert(thickness == null || thickness >= 0.0),
