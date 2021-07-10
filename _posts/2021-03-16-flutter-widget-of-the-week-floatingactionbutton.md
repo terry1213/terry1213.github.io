@@ -73,30 +73,30 @@ Scaffold(
 
 | Property              	| Description 	| Type                   	| Default(기본 생성자)           	| Default (extended 생성자)                 	|
 |-----------------------	|-------------	|------------------------	|-------------------	|--------------------------	|
-| child                 	| 버튼에 들어갈 위젯. 보통 아이콘이 들어간다.	| Widget                	|                   	| 해당 Property 없음	|
-| icon                 	| 버튼에 들어갈 아이콘. extended 생성자에서 child 대신 사용.	| Widget                	| 해당 Property 없음	|                   	|
+| child                 	| 버튼에 들어갈 위젯. 보통 아이콘이 들어간다.	| Widget?                	|                   	| 해당 Property 없음	|
+| icon                 	| 버튼에 들어갈 아이콘. extended 생성자에서 child 대신 사용.	| Widget?                	| 해당 Property 없음	|                   	|
 | label                 	| 버튼에 들어갈 라벨. extended 생성자에서 child 대신 사용.	| Widget                	| 해당 Property 없음	|                   	|
 | autofocus             	| 버튼 위젯에 autofocus가 왜 있는지 잘 모르겠다\...	| bool                   	| false             	| false                    	|
-| backgroundColor       	| 버튼의 배경 색깔.	| Color                 	|                   	|                          	|
-| focusColor            	| 연결된 focusNode에 request가 들어왔을 때의 색깔. 	| Color                 	|                   	|                          	|
-| foregroundColor       	| 버튼의 아이콘과 텍스트의 색깔.	| Color                 	|                   	|                          	|
-| hoverColor            	| 마우스 포인터를 버튼 위에 올리고 있을 때의 버튼 색깔.	| Color                 	|                   	|                          	|
-| splashColor           	| 버튼을 길게 클릭할 때 퍼지는 효과의 색깔.	| Color                 	|                   	|                          	|
+| backgroundColor       	| 버튼의 배경 색깔.	| Color?                 	|                   	|                          	|
+| focusColor            	| 연결된 focusNode에 request가 들어왔을 때의 색깔. 	| Color?                 	|                   	|                          	|
+| foregroundColor       	| 버튼의 아이콘과 텍스트의 색깔.	| Color?                 	|                   	|                          	|
+| hoverColor            	| 마우스 포인터를 버튼 위에 올리고 있을 때의 버튼 색깔.	| Color?                 	|                   	|                          	|
+| splashColor           	| 버튼을 길게 클릭할 때 퍼지는 효과의 색깔.	| Color?                 	|                   	|                          	|
 | clipBehavior          	| 버튼의 child가 버튼보다 클 때 해당 child를 자르는 방법.	| Clip                   	| Clip.none         	| Clip.none                	|
-| elevation             	| 버튼의 디폴트 z 좌표, 그림자 크기를 조절한다.	| double                	|                   	|                          	|
-| disabledElevation     	| 버튼이 사용 불가능한 상태일 때의 elevation	| double                	|                   	|                          	|
-| focusElevation        	| 연결된 focusNode에 request가 들어왔을 때의 elevation	| double                	|                   	|                          	|
-| highlightElevation    	| 버튼을 클릭 중일 때의 elevation	| double                	|                   	|                          	|
-| hoverElevation        	| 마우스 포인터를 버튼 위에 올리고 있을 때의 elevation	| double                	|                   	|                          	|
-| focusNode             	| 버튼과 연결할 focusNode.	| FocusNode             	|                   	|                          	|
-| heroTag               	| 한 화면에서 여러 FloatingActionButton를 사용할 때 필요한 버튼 고유의 값.	| Object                	| \_DefaultHeroTag() 	| \_DefaultHeroTag()        	|
+| elevation             	| 버튼의 디폴트 z 좌표, 그림자 크기를 조절한다.	| double?                	|                   	|                          	|
+| disabledElevation     	| 버튼이 사용 불가능한 상태일 때의 elevation	| double?                	|                   	|                          	|
+| focusElevation        	| 연결된 focusNode에 request가 들어왔을 때의 elevation	| double?                	|                   	|                          	|
+| highlightElevation    	| 버튼을 클릭 중일 때의 elevation	| double?                	|                   	|                          	|
+| hoverElevation        	| 마우스 포인터를 버튼 위에 올리고 있을 때의 elevation	| double?                	|                   	|                          	|
+| focusNode             	| 버튼과 연결할 focusNode.	| FocusNode?             	|                   	|                          	|
+| heroTag               	| 한 화면에서 여러 FloatingActionButton를 사용할 때 필요한 버튼 고유의 값.	| Object?                	| \_DefaultHeroTag() 	| \_DefaultHeroTag()        	|
 | isExtended            	| 버튼이 extended 생성자를 통해 만들어졌는지 여부.	| bool                   	| false             	| true                     	|
-| materialTapTargetSize 	| 버튼의 클릭 범위.	| MaterialTapTargetSize 	|                   	|                          	|
+| materialTapTargetSize 	| 버튼의 클릭 범위.	| MaterialTapTargetSize? 	|                   	|                          	|
 | mini                  	| 버튼 사이즈.	| bool                   	| false             	| 해당 Property 없음	|
-| mouseCursor           	| 마우스 포인터를 버튼 위에 올리고 있을 때의 마우스 커서 모양.	| MouseCursor           	|                   	| SystemMouseCursors.click 	|
-| onPressed             	| 버튼이 클릭했을 때 실행될 코드.	| VoidCallback          	|                   	|                          	|
-| shape                 	| 버튼의 모양.	| ShapeBorder           	|                   	|                          	|
-| tooltip               	| 버튼을 길게 클릭할 때 나오는 버튼에 대한 설명 문구.	| String                	|                   	|                          	|
+| mouseCursor           	| 마우스 포인터를 버튼 위에 올리고 있을 때의 마우스 커서 모양.	| MouseCursor?           	|                   	| SystemMouseCursors.click 	|
+| onPressed             	| 버튼이 클릭했을 때 실행될 코드.	| VoidCallback?          	|                   	|                          	|
+| shape                 	| 버튼의 모양.	| ShapeBorder?           	|                   	|                          	|
+| tooltip               	| 버튼을 길게 클릭할 때 나오는 버튼에 대한 설명 문구.	| String?                	|                   	|                          	|
 
 ### clipBehavior
 

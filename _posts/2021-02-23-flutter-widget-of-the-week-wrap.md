@@ -71,7 +71,7 @@ Wrap(
 | runAlignment       	| 교차축에서 각 줄의 나열 방식.	| WrapAlignment      	| WrapAlignment.start      	|
 | spacing            	| 주축에서	child 사이의 간격. | double             	| 0.0                      	|
 | runSpacing         	| 교차축에서 줄 사이의 간격. | double             	| 0.0                      	|
-| textDirection      	| 수평 배치 방향(왼쪽에서 오른쪽, 오른쪽에서 왼쪽). | TextDirection      	|                          	|
+| textDirection      	| 수평 배치 방향(왼쪽에서 오른쪽, 오른쪽에서 왼쪽). | TextDirection?      	|                          	|
 | verticalDirection  	| 수직 배치 방향(위에서부터 아래로,아래서부터 위로).	| VerticalDirection  	| VerticalDirection.down   	|
 | clipBehavior       	|             	| Clip               	| Clip.hardEdge            	|
 

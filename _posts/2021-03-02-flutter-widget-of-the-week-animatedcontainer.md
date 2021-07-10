@@ -60,17 +60,17 @@ Center(
 
 | Property             	| Description 	| Type               	| Default       	|
 |----------------------	|-------------	|--------------------	|---------------	|
-| child             	| AnimatedContainer을 적용할 Widget	| Widget             	|               	|
-| alignment            	| child 배치 방식	| AlignmentGeometry  	|               	|
-| constraints          	| child에 적용할 추가적인 제약사항(constraints)	| BoxConstraints     	|               	|
+| child             	| AnimatedContainer을 적용할 Widget	| Widget?             	|               	|
+| alignment            	| child 배치 방식	| AlignmentGeometry?  	|               	|
+| constraints          	| child에 적용할 추가적인 제약사항(constraints)	| BoxConstraints?     	|               	|
 | curve                	| 애니메이션 종류	| Curve              	| Curves.linear 	|
-| decoration           	| child 뒤쪽의 데코레이션	| Decoration         	|               	|
+| decoration           	| child 뒤쪽의 데코레이션	| Decoration?         	|               	|
 | duration             	| 애니메이션에 걸리는 시간	| Duration           	|               	|
-| foregroundDecoration 	| child 앞쪽의 데코레이션	| Decoration         	|               	|
-| margin               	| decoration의 외부 여유 공간.	| EdgeInsetsGeometry 	|               	|
-| onEnd                	| 애니메이션이 끝날 시에 실행되는 함수	| VoidCallback       	|               	|
-| padding              	| decoration의 내부 여유 공간. child는 해당 공간 만큼 여유를 두고 위치하게 된다.	| EdgeInsetsGeometry 	|               	|
-| transform            	| AnimatedContainer에 적용할 변환 행렬(transformation matrix).	| Matrix4            	|               	|
+| foregroundDecoration 	| child 앞쪽의 데코레이션	| Decoration?         	|               	|
+| margin               	| decoration의 외부 여유 공간.	| EdgeInsetsGeometry? 	|               	|
+| onEnd                	| 애니메이션이 끝날 시에 실행되는 함수	| VoidCallback?       	|               	|
+| padding              	| decoration의 내부 여유 공간. child는 해당 공간 만큼 여유를 두고 위치하게 된다.	| EdgeInsetsGeometry? 	|               	|
+| transform            	| AnimatedContainer에 적용할 변환 행렬(transformation matrix).	| Matrix4?            	|               	|
 
 ### curve
 

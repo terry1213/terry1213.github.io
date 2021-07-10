@@ -97,6 +97,6 @@ FutureBuilder(
 
 | Property    	| Description 	| Type      	| Default 	|
 |-------------	|-------------	|-----------	|---------	|
-| future      	| 해당 FutureBuilder가 연결되는 Future.	| Future\<T> 	|         	|
+| future      	| 해당 FutureBuilder가 연결되는 Future.	| Future\<T>? 	|         	|
 | builder     	| 해당 FutureBuilder가 사용할 빌드 전략.	| AsyncWidgetBuilder\<T>	|         	|
-| initialData 	| future가 완료되기 전까지 사용할 snapshot을 만드는데 사용될 데이터.	| T         	|         	|
+| initialData 	| future가 완료되기 전까지 사용할 snapshot을 만드는데 사용될 데이터.	| T?         	|         	|

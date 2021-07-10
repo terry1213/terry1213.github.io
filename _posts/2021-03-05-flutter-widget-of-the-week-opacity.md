@@ -78,6 +78,6 @@ Center(
 
 | Property               	| Description 	| Type   	| Default 	|
 |------------------------	|-------------	|--------	|---------	|
-| child                  	| Opacity를 적용할 위젯.	| Widget 	|         	|
+| child                  	| Opacity를 적용할 위젯.	| Widget? 	|         	|
 | opacity                	| child 위젯의 선명도.	| double 	|         	|
 | alwaysIncludeSemantics 	| 정확한 용도를 모르겠다\...	| bool   	| false	|
