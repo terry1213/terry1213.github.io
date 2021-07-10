@@ -20,7 +20,7 @@ categories:
 
 ``` dart
 class Example extends StatefulWidget {
-  Example({Key key}) : super(key: key);
+  Example({Key? key}) : super(key: key);
 
   @override
   _ExampleState createState() => _ExampleState(); // State 생성.
@@ -31,6 +31,7 @@ class _ExampleState extends State<Example> {
   Widget build(BuildContext context) {
     return ... // UI에서 변화할 부분.
   }
+}
 ```
 
 `StatefulWidget` 인스턴스는 mutable 하지 않다. `StatefulWidget` 인스턴스 자체는 immutable 하지만, mutable한 상태(state)를 별도로 관리한다. 상태(state)가 저장되는 곳은 `State` 오브젝트이며, `State` 오브젝트는 `createState()` 메소드를 통해 생성된다.
@@ -45,7 +46,7 @@ class _ExampleState extends State<Example> {
 
 ``` dart
 class Counter extends StatefulWidget {
-  Counter({Key key}) : super(key: key);
+  Counter({Key? key}) : super(key: key);
 
   @override
   _CounterState createState() => _CounterState();
@@ -82,7 +83,7 @@ class _CounterState extends State<Counter> {
 
 ```dart
 class Counter extends StatefulWidget {
-  Counter({Key key}) : super(key: key);
+  Counter({Key? key}) : super(key: key);
 
   @override
   _CounterState createState() => _CounterState();
@@ -130,7 +131,7 @@ class _CounterState extends State<Counter> {
 
 ``` dart
 class Counter extends StatefulWidget {
-  Counter({Key key}) : super(key: key);
+  Counter({Key? key}) : super(key: key);
 
   @override
   _CounterState createState() => _CounterState();
