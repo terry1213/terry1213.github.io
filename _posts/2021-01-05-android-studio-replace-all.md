@@ -10,12 +10,12 @@ Android Studio를 통해 개발할 때 변수나 함수의 이름을 변경해�
 
 ## Edit - Find - Replace in Path..
 
-![Example1](/assets/androidstudio/replaceall/Example1.png){: width="250" height="400"}
-![Example2](/assets/androidstudio/replaceall/Example2.png){: width="250" height="400"}
+![Example1](/assets/flutter/Tip/replaceall/Example1.png){: width="250" height="400"}
+![Example2](/assets/flutter/Tip/replaceall/Example2.png){: width="250" height="400"}
 
 `Edit - Find - Find in Path..`순서로 클릭하면 아래와 같은 화면이 나온다. 두 개의 입력칸 중 위의 입력칸을 통해 **변경할 단어**를 검색하고 아래 입력칸을 통해 변경할 단어가 **변경될 단어**를 정하면 된다.
 
-![Example3](/assets/androidstudio/replaceall/Example3.png){: width="500" height="500"}
+![Example3](/assets/flutter/Tip/replaceall/Example3.png){: width="500" height="500"}
 ## Command + Shift + R (Mac)
 
 `Command + Shift + R`를 눌러도 위의 방법과 동일한 화면이 나온다.

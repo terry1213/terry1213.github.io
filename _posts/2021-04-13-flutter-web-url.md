@@ -36,7 +36,7 @@ class ExampleApp extends StatelessWidget {
 
 위와 같은 기본적인 코드가 있다고 생각해보자.
 
-![](/assets/flutter/URLSharp/Example1.png){: width="300" height="500"}
+![](/assets/flutter/Tip/URLSharp/Example1.png){: width="300" height="500"}
 
 이 코드를 실행해보면 url에 #이 들어가는 것을 확인할 수 있다.
 ## 해결 방법
@@ -90,6 +90,6 @@ class ExampleApp extends StatelessWidget {
 
 ### 4. 확인
 
-![](/assets/flutter/URLSharp/Example2.png){: width="300" height="500"}
+![](/assets/flutter/Tip/URLSharp/Example2.png){: width="300" height="500"}
 
 다시 실행해보면, url에서 #이 없어진 것을 확인할 수 있다.
