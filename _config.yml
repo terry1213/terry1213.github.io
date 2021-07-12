@@ -16,17 +16,17 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "개발 기록 일지"
+title                    : "Terry's Dev-Diary"
 title_separator          : "-"
-subtitle                 : "iOS, Swift, 백준"
-name                     : "임연우"
+subtitle                 : ""
+name                     : "Terry (임연우)"
 description              : "배운 것을 기록하고 정리하는 블로그"
 url                      : "https://terry1213.github.io"
 baseurl                  : ""
 repository               : "terry1213/terry1213.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo.png"
-masthead_title           : "개발 기록 일지"
+masthead_title           : "Terry's Dev-Diary"
 # breadcrumbs            : true
 words_per_minute         : 200
 comments:
@@ -93,11 +93,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "임연우"
+  name             : "Terry (임연우)"
   avatar           : "/assets/images/profile/bio-photo.jpeg"
   bio              : "배운 것을 **열심히** 기록하자."
   location         : "Republic of Korea"
-  email            : "21500602@handong.edu"
+  email            : "1213terry@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
