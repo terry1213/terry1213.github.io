@@ -6,6 +6,7 @@
     {% if page.show_date %}
       {% assign date = page.date %}
       <i class="far {% if include.type == 'grid' and page.read_time and page.show_date %}fa-fw {% endif %}fa-calendar-alt" aria-hidden="true"></i>
+      {{ site.data.ui-text[site.locale].created_label | default: "Created:" }}
       <time datetime="{{ date | date_to_xmlschema }}">{{ date | date: "%B %-d, %Y" }}</time>
     {% endif %}
 
