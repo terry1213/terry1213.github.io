@@ -15,9 +15,30 @@
     <script src="/assets/js/vendor/jquery/jquery-3.4.1.js"></script>
     <script src="/assets/js/plugins/jquery.magnific-popup.js"></script>
     <script src="/assets/js/magnific-popup-setting.js"></script>
+    <script type="text/javascript">
+      function setModifiedDate() {
+        if (document.getElementById('last-modified')) {
+          fetch("https://api.github.com/repos/{{ site.github.owner_name }}/{{ site.github.repository_name }}/commits?path={{ page.path }}&per_page=1")
+            .then((response) => {
+              return response.json();
+            })
+            .then((commits) => {
+              var modified = commits[0]['commit']['committer']['date'].slice(0,10);
+              if(modified != "{{ page.date | date: "%Y-%m-%d" }}") {
+                let date = new Date(modified);
+                let year = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(date);
+                let month = new Intl.DateTimeFormat('en', { month: 'long' }).format(date);
+                let day = new Intl.DateTimeFormat('en', { day: 'numeric' }).format(date);
+                modified = `${month} ${day}, ${year}`;
+                document.getElementById('last-modified').textContent = "{{ site.data.ui-text[site.locale].date_label | default: "Updated:" }} " + modified;
+              }
+            });
+        }
+      }
+    </script>
   </head>
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" onload="setModifiedDate();">
     {% include_cached skip-links.html %}
     {% include_cached browser-upgrade.html %}
     {% include_cached masthead.html %}

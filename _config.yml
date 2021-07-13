@@ -27,6 +27,9 @@ repository               : "terry1213/terry1213.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo.png"
 masthead_title           : "Terry's Dev-Diary"
+github:
+  owner_name             : "terry1213"
+  repository_name        : "terry1213.github.io"
 # breadcrumbs            : true
 words_per_minute         : 200
 comments:
