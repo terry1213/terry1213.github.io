@@ -8,38 +8,45 @@ main:
   - title: "Posts by Year"
     url: /year-archive/
 
-#categories:
-#  - title: "Mobile"
-#    children:
-#      - title: "Flutter"
-#        url: /categories/#flutter
-#      - title: "Dart"
-#        url: /categories/#dart
-#      - title: "Android Studio"
-#        url: /categories/#androidstudio
-#      - title: "Swift"
-#        url: /categories/#swift
-#      - title: "Xcode"
-#        url: /categories/#xcode
-#  - title: "Web"
-#    children:
-#      - title: "Javascript"
-#        url: /categories/#javascript
-#      - title: "Apache"
-#        url: /categories/#apache
-#      - title: "Markdown"
-#        url: /categories/#markdown
-#  - title: "Database"
-#    children:
-#      - title: "MySQL"
-#        url: /categories/#mysql
-#  - title: "코딩 문제"
-#    children:
-#      - title: "백준"
-#        url: /categories/#backjoon
-#      - title: "프로그래머스"
-#        url: /categories/#programmers
-#  - title: "Blog"
-#    children:
-#      - title: "Blog"
-#        url: /categories/#blog
+categories:
+  - title: "Mobile"
+    children:
+      - title: "Flutter"
+        category: "Flutter"
+        url: /categories/#flutter
+      - title: "Dart"
+        category: "Dart"
+        url: /categories/#dart
+      - title: "Android Studio"
+        category: "AndroidStudio"
+        url: /categories/#androidstudio
+      - title: "Swift"
+        category: "Swift"
+        url: /categories/#swift
+      - title: "Xcode"
+        category: "Xcode"
+        url: /categories/#xcode
+  - title: "Algorithm"
+    children:
+      - title: "Backjoon"
+        category: "Backjoon"
+        url: /categories/#backjoon
+      - title: "Programmers"
+        category: "Programmers"
+        url: /categories/#programmers
+  - title: "Blog"
+    children:
+      - title: "Blog"
+        category: "Blog"
+        url: /categories/#blog
+  - title: "Etc"
+    children:
+      - title: "Apache"
+        category: "Apache"
+        url: /categories/#apache
+      - title: "Markdown"
+        category: "Markdown"
+        url: /categories/#markdown
+      - title: "MySQL"
+        category: "MySQL"
+        url: /categories/#mysql
