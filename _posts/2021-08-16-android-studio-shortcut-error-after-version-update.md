@@ -1,12 +1,10 @@
 ---
-title: "[Android Studio] 버전 업데이트 이후, 단축키가 되지 않는 경우"
+title: "[Android Studio] Arctic Fox로 업데이트한 이후, 단축키가 되지 않는 문제"
 categories:
 - AndroidStudio
 tags:
-- Tip
+- Error
 ---
-
-## 문제 상황
 
 오랜만에 안드로이드 스튜디오 버전을 업데이트했다. 업데이트를 잘 마치고 작업하던 중, 갑자기 단축키가 되지 않는 문제가 발생했다.
 
