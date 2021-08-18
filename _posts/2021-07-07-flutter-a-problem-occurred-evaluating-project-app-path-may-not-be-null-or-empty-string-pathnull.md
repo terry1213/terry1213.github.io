@@ -48,4 +48,4 @@ A problem occurred evaluating project ':app'.
 
 간단한 원인이었다보니 해결 방안도 간단했다. 해당 부분을 다음과 같이 주석 처리해주면 된다. 현재 해당 어플을 릴리즈를 하는 것이 아니라 디버깅 및 테스팅을 위한 실행이기 때문이다.
 
-> 이 [스택오버플로우 답글](https://stackoverflow.com/a/57515614){:target="_blank"}을 참고했다.
+> [stackoverflow](https://stackoverflow.com/a/57515614){:target="_blank"}을 참고하여 해결했다.
