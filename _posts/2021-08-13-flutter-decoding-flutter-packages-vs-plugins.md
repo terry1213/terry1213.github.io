@@ -1,5 +1,5 @@
 ---
-title: "[Flutter/Decoding Flutter] Packages vs Plugins?(패키지 vs 플러그인)"
+title: "[Flutter/Decoding Flutter] 패키지 vs 플러그인 (Packages vs Plugins?)"
 tags:
 - DecodingFlutter
 categories:
