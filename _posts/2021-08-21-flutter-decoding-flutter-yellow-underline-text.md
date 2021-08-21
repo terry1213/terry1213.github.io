@@ -48,7 +48,7 @@ MaterialApp(
 )
 ```
 
-이 코드에는 `DefaultTextStyle` 위젯을 사용하지 않았다. 그래서 `Hello World`에는 노란 밑줄이 생길 거라고 생각할 수 있지만, 코드를 돌려보면 결과는 그렇지 않다.
+이 코드에선 `DefaultTextStyle` 위젯을 사용하지 않았다. 그래서 `Hello World`에는 노란 밑줄이 생길 거라고 생각할 수 있지만, 코드를 돌려보면 결과는 그렇지 않다.
 
 ![](/assets/flutter/DecodingFlutter/Yellow-underline-text/Example2.png){: #magnific width="300" height="500"}
 
