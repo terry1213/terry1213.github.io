@@ -48,13 +48,13 @@ MaterialApp(
 )
 ```
 
-이 코드에는 `DefaultTextStyle`를 사용되지 않았다. 그래서 `Hello World`에는 노란 밑줄이 생길 거라고 생각할 수 있지만, 코드를 돌려보면 결과는 그렇지 않다.
+이 코드에는 `DefaultTextStyle` 위젯을 사용하지 않았다. 그래서 `Hello World`에는 노란 밑줄이 생길 거라고 생각할 수 있지만, 코드를 돌려보면 결과는 그렇지 않다.
 
 ![](/assets/flutter/DecodingFlutter/Yellow-underline-text/Example2.png){: #magnific width="300" height="500"}
 
 `Hello World`는 정상적으로 화면에 그려진다.
 
-이는 `Scaffold` 위젯 때문이다. `Scaffold` 위젯은 자신의 하위 위젯들을 `Material` 위젯으로 감싸 주는데, 이 `Material` 위젯이 내부에 텍스트 기본 스타일 값을 가지고 있기 때문이다.
+이는 `Scaffold` 위젯 때문이다. `Scaffold` 위젯은 자신의 하위 위젯들을 `Material` 위젯으로 감싸 주는데, 이 `Material` 위젯이 내부에 텍스트 기본 스타일 값을 가지고 있다. 따라서 `DefaultTextStyle` 위젯이 없어도 노란색 밑줄이 생기지 않는 것이다.
 
 ## `DefaultTextStyle` 위젯, `Scaffold` 위젯이 모두 없다면?
 
