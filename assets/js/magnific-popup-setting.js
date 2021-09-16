@@ -9,6 +9,6 @@ $(document).ready(function() {
             },
         });
         $(this).parent('p').css('overflow', 'auto');
-        return '<a href="' + $(this).attr('src') + '" style="width:' + $(this).attr('width') +'px; margin: ' + $(this).attr('margin') + 'px; float: left;"><figure> </figure>' + '<figcaption style="text-align: center;" class="caption">' + $(this).attr('alt') + '</figcaption>' + '</a>';
+        return '<a href="' + $(this).attr('src') + '" style="width:' + $(this).attr('width') +'px; margin: ' + $(this).attr('margin') + 'px; display:inline-block;"><figure> </figure>' + '<figcaption style="text-align: center;" class="caption">' + $(this).attr('alt') + '</figcaption>' + '</a>';
     });
 });
