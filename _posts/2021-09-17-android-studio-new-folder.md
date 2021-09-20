@@ -16,7 +16,7 @@ tags:
 
 상단 메뉴에서 **File - Project Structure**로 들어간다.
 
-![](/assets/androidstudio/new-folder/Example2.png){: #magnific width="700" height="500"}
+![](/assets/androidstudio/new-folder/Example2.png){: #magnific width="900" height="500"}
 
 왼쪽 메뉴에서 **Modules**를 선택하고, 중간 쯤에 위치한 **Sources**를 클릭한다.
 
