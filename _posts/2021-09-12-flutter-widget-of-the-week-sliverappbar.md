@@ -1,5 +1,5 @@
 ---
-title: "[Flutter / Widget of the Week] SliverAppBar"
+title: "[Flutter/Widget of the Week] SliverAppBar"
 categories:
 - Flutter
 tags:
