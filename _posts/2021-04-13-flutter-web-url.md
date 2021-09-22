@@ -4,6 +4,7 @@ categories:
 - Flutter
 tags:
 - Tip
+- Web
 ---
 
 요즘 플러터로 웹 개발을 해야할 일이 생겼다. 네비게이션(페이지) 작업을 하다가 우연히 url이 눈에 들어왔다.
