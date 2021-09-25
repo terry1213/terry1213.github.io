@@ -1,5 +1,5 @@
 ---
-title: "[Flutter] 'Unable to find bundled Java version.' 에러"
+title: "[Flutter] Unable to find bundled Java version. 에러"
 categories:
 - Flutter
 tags:

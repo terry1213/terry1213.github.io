@@ -1,5 +1,5 @@
 ---
-title: "[Flutter] 'Android license status unknown.' 에러"
+title: "[Flutter] Android license status unknown. 에러"
 categories:
 - Flutter
 tags:
