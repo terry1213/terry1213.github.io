@@ -67,7 +67,7 @@ import 'package:provider/provider.dart';
 
 ## 1. Provider 생성
 
-Provider를 생성하는 방법은 정말 다양한다. 용도에 따라 적합한 방법을 선택하여 사용한다.
+Provider를 생성하는 방법은 다양하다. 용도에 따라 적합한 방법을 선택하여 사용한다.
 
 ### 1.1. `Provider`
 
