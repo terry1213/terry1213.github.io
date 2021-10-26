@@ -126,6 +126,16 @@ drawer: Drawer(
 
 `Drawer`에서 Green 버튼을 클릭하면 초록색 컨테이너의 위치로, Yellow 버튼을 클릭하면 노란색 컨테이너의 위치로 스크롤이 이동되는 것을 볼 수 있다.
 
+## 주의
+
+예시에서는 `Column`을 `SingleChildScrollView`로 감싸서 사용했다. 왜 `ListView`를 사용하지 않았을까?
+
+앞서 말했듯이 특정 위젯의 위치로 스크롤을 이동시키기 위해선 해당 위젯의 `BuildContext`가 필요하다. 하지만 `ListView`는 현재 화면에 보이는 자식 위젯만 렌더링한다. 따라서 화면에 보이지 않는 위젯은 빌드되지 않으며 `BuildContext`도 갖지 못한다.
+
+`ListView`를 사용하면 화면에 보이지 않는 위젯의 `BuildContext`를 가져올 수 없어서 스크롤 이동 기능이 제한되기 때문에 `Column`을 `SingleChildScrollView`로 감싸서 사용한 것이다.
+
+물론 이 방법이 무조건 좋은 것은 아니다. 화면에 보이지 않는 자식 위젯들까지 전부 렌더링하기 때문에 자식 위젯이 너무 많으면 성능 문제가 발생할 수 있으니 주의하자.
+
 ## 완성 코드
 
 <details markdown="1">
