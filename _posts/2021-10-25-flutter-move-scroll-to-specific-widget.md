@@ -47,7 +47,11 @@ class ScrollToWidgetExample extends StatelessWidget {
 
 ## 해결 방법
 
-`GlobalKey`와 `Scrollable.ensureVisible()`를 사용하면 이 문제를 해결할 수 있다.
+[scrollable_positioned_list ](https://pub.dev/packages/scrollable_positioned_list){:target="\_blank"} 패키지를 사용하는 간단한 방법이 있다.
+
+하지만 이 글에서는 `GlobalKey`와 `Scrollable.ensureVisible()`를 사용하여 직접 구현하는 방법을 사용했다. 그렇게 한 이유는 그저 공부하기 위해서다.
+
+패키지를 활용하는 방법이 기능적으로나 편리함으로나 무조건 좋으니 실제 개발에선 패키지를 사용하자.
 
 ### GlobalKey 생성
 
@@ -126,7 +130,7 @@ drawer: Drawer(
 
 `Drawer`에서 Green 버튼을 클릭하면 초록색 컨테이너의 위치로, Yellow 버튼을 클릭하면 노란색 컨테이너의 위치로 스크롤이 이동되는 것을 볼 수 있다.
 
-## 주의
+## ListView를 사용하지 않은 이유
 
 예시에서는 `Column`을 `SingleChildScrollView`로 감싸서 사용했다. 왜 `ListView`를 사용하지 않았을까?
 
