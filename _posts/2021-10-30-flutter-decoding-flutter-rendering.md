@@ -8,7 +8,7 @@ tags:
 
 ## Decoding Flutter 유튜브 영상
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zmbmrw07qBc?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/54yoCqkew6g?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 <br>
 
