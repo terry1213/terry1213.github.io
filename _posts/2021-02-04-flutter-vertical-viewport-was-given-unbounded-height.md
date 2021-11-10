@@ -20,13 +20,78 @@ Vertical viewport was given unbounded height.
 
 ## 해결 방법
 
-`shrinkWrap`를 `true`로 설정하면 내부 컨텐츠에 맞춰서 높이를 결정한다. 하지만 이 상태에선 `ListView`에서 스크롤이 되지 않기 때문에 스크롤이 가능하게 하고 싶다면 `scrollDirection`도 설정해주면 된다.
+### shrinkWrap: true
+
+첫번째 방법은 `shrinkWrap`를 `true`로 설정하는 것이다. 이렇게 하면 내부 컨텐츠에 맞춰서 높이가 결정된다. 하지만 이렇게 하면 `ListView` 안의 `children`이 많아져 화면 이상으로 넘어가면 오버플로우가 발생하게 되는 문제가 있다.
 
 
 ``` dart
 ListView(
-	shrinkWrap: true,
-	scrollDirection: Axis.vertical,// 세로 방향으로 스크롤(가로 방향은 Axis.horizontal).
-	// 나머지 코드 생략.
+  shrinkWrap: true,
+  children: [
+    Container(
+      height: 400,
+      color: Colors.red,
+    ),
+    Container(
+      height: 400,
+      color: Colors.blue,
+    ),
+    Container(
+      height: 400,
+      color: Colors.green,
+    ),
+  ],
 )
+```
+
+### SizedBox()
+
+두번째는 `SizedBox` 위젯을 활용하는 방법이다. `ListView`를 `SizedBox`으로 감싸고 `SizedBox`에 `height`를 설정한다.
+
+``` dart
+SizedBox(
+  height: 400,
+  child: ListView(
+    children: [
+      Container(
+        height: 400,
+        color: Colors.red,
+      ),
+      Container(
+        height: 400,
+        color: Colors.blue,
+      ),
+      Container(
+        height: 400,
+        color: Colors.green,
+      ),
+    ],
+  ),
+),
+```
+
+### Expanded()
+
+마지막으로, 고정된 높이를 주기 싫고 화면의 나머지 높이를 전부 `ListView`에 할당해주고 싶다면 `Expanded`을 사용하자.
+
+``` dart
+Expanded(
+  child: ListView(
+    children: [
+      Container(
+        height: 400,
+        color: Colors.red,
+      ),
+      Container(
+        height: 400,
+        color: Colors.blue,
+      ),
+      Container(
+        height: 400,
+        color: Colors.green,
+      ),
+    ],
+  ),
+),
 ```
