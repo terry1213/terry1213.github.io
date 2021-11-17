@@ -88,6 +88,8 @@ $(document).ready(function() {
 
 ## 4. 게시글에 이미지 추가
 
+### 4.1. markdown 버전 설정 방법
+
 ``` markdown
 <!--#magnific 추가--> 
 ![관람차](/assets/jekyll/magnific-popup/관람차.JPG){: #magnific width="220"}
@@ -99,10 +101,34 @@ $(document).ready(function() {
 ```
 
 이제 게시글에 평소처럼 이미지를 추가하되 magnific-popup을 적용할 곳에는 `#magnific`을 적어주면 된다.
+
+### 4.2. html 버전 설정 방법
+
+``` html
+<!--magnific 설정--> 
+<img src="/assets/jekyll/magnific-popup/관람차.JPG" width="220" id="magnific" alt="관람차">
+<img src="/assets/jekyll/magnific-popup/야경.JPG" width="400" id="magnific" alt="야경">
+
+<!--magnific 미설정--> 
+<img src="/assets/jekyll/magnific-popup/관람차.JPG" width="220">
+<img src="/assets/jekyll/magnific-popup/야경.JPG" width="400">
+```
+
+> img 태그를 사용해서 이미지를 올리는 경우에 어떻게 하는지 궁금해하시는 분이 계셔서 추가했습니다.
+
 ## 5. 적용 확인
+
+### 5.1. markdown 버전 확인
 
 ![관람차](/assets/jekyll/magnific-popup/관람차.JPG){: #magnific width="220"}
 ![야경](/assets/jekyll/magnific-popup/야경.JPG){: #magnific width="400"}
+
+### 5.2. html 버전 확인
+
+<img src="/assets/jekyll/magnific-popup/관람차.JPG" width="220" id="magnific" alt="관람차">
+<img src="/assets/jekyll/magnific-popup/야경.JPG" width="400" id="magnific" alt="야경">
+
+### 5.3. 미설정 확인
 
 ![관람차](/assets/jekyll/magnific-popup/관람차.JPG){: width="220"}
 ![야경](/assets/jekyll/magnific-popup/야경.JPG){: width="400"}
