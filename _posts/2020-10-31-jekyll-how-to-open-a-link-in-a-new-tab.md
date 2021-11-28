@@ -32,7 +32,7 @@ tags:
 
 ![Example4](/assets/jekyll/How to open a link in a new tab/Example4.png){: width="350" height="100"}
 
-기존 링크 뒤에 {:target="_blank"} 를 붙이기만 하면 끝이다.
+기존 링크 뒤에 `{:target="\_blank"}`를 붙이기만 하면 끝이다.
 
 [태그별 게시글 목록으로 이동](/tags/){:target="_blank"}
 
