@@ -80,7 +80,7 @@ Scaffold(
 | bottom                    	| 화면 아래쪽에 SafeArea를 적용할지 여부.	| 	bool       	| true            	|
 | left                      	| 화면 왼쪽에 SafeArea를 적용할지 여부. 	| bool       	| true            	|
 | right                     	| 화면 오른쪽에 SafeArea를 적용할지 여부. 	| bool       	| true            	|
-|[ maintainBottomViewPadding](/flutter/flutter-widget-of-the-week-safearea/#maintainbottomviewpadding) 	| 아래에서 키보드가 올라오는 경우에 아래쪽 padding을 유지할지 여부.  	| bool       	| false           	|
+| maintainBottomViewPadding	| 아래에서 키보드가 올라오는 경우에 아래쪽 padding을 유지할지 여부.  	| bool       	| false           	|
 | minimum                   	| 적용할 최소 padding(여백)의 값.  media padding(각 디바이스에 필요한 여백)과 비교하여 더 큰 값으로 padding을 설정한다.	| EdgeInsets 	| EdgeInsets.zero 	|
 
 
