@@ -10,7 +10,7 @@ tags:
 
 하지만 첫번째 로딩 때부터 이미지를 빠르게 보여주고 싶은 경우에는 어떨까? 앞서 언급한 cached_network_image 패키지를 사용해도 이미지를 처음 로딩할 때는 시간이 걸린다.
 
-## precacheImage() 
+## precacheImage()
 
 이를 해결할 수 있는 것이 바로 `precacheImage()`이다. `precacheImage()`는 말 그대로 이미지를 미리 캐시에 넣어두어 처음 로딩 때부터 빠르게 화면에 보여줄 수 있게 해주는 메소드이다.
 
@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // precacheImage()를 통해 홈화면을 빌드할 때 캐시에 미리 이미지를 넣어둠.
+    // precacheImage()를 통해 홈화면을 빌드할 때 캐시에 미리 이미지를 넣음.
     precacheImage(
       Image.network(
               'https://terry1213.github.io/assets/flutter/Tip/precacheImage/network_image.JPG')
