@@ -120,3 +120,7 @@ void showLongHeightModalBottomSheet(BuildContext context) {
 ![](/assets/flutter/Tip/modal-bottom-sheet-height/Example4.png){: #magnific width="300"}
 
 이제 `ModalBottomSheet`의 높이가 스크린 높이의 80퍼센트로 보이는 것을 볼 수 있다.
+
+## 전체 예시 코드
+
+<https://github.com/terry1213/flutter-example/tree/modal_bottom_sheet_height>{:target="\_blank"}
