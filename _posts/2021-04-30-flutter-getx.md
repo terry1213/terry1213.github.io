@@ -735,3 +735,7 @@ class HomePage extends StatelessWidget {
 ```
 
 </details>
+
+## 3. 기타
+
+* [GetX를 통한 중첩 네비게이션 구현 (Nested Navigation)](https://terry1213.github.io/flutter/flutter-getx-nested-navigation/){:target="\_blank"}
