@@ -375,7 +375,7 @@ class NextPage extends StatelessWidget {
 
 ## 2. 상태(State) 관리
 
-GetX에는 크게 두가지의 상태 관리법이 존재한다. 이 두가지의 상태 관리법을 아주 간단한 예시인 Counter( 버튼 클릭 시에 숫자가 1씩 증가) 예시를 통해 설명해보겠다.
+GetX에는 크게 두가지의 상태 관리법이 존재한다. 이 두가지의 상태 관리법을 아주 간단한 예시인 Counter 앱을 통해 설명해보겠다.
 
 ### 2.1. simple 방식
 
@@ -443,7 +443,7 @@ TextButton(onPressed: Get.find<Controller>().increment1, child: Text('increment1
 
 이 문제를 해결하기 위해서 `Get.put()`을 사용한다.
 
-우선 `build()` 메소드 내부에 `controller` 변수를 선언하며, 이때 `Get.put()`를 통해 `Controller`를 등록한다.
+`build()` 메소드 내부에서 `Get.put()`를 통해 `Controller`를 등록하여 이를 `controller` 변수에 할당한다.
 
 ``` dart
 @override
@@ -453,7 +453,7 @@ Widget build(BuildContext context) {
 }
 ```
 
-`controller` 변수를 선언하면서  `Controller`를 등록했기 때문에 `GetBuilder`에서 또 등록할 필요가 없다. 따라서 `init` 부분을 지운다.
+위의 과정에서 `Controller`를 등록한 것이기 때문에 `GetBuilder`에서 또 등록할 필요가 없다. 따라서 `init` 부분을 지운다.
 
 ``` dart
 GetBuilder<Controller>(
@@ -558,9 +558,9 @@ TextButton(onPressed: controller.increment2, child: Text('increment2'))
 
 #### 2.2.5. Workers
 
-이전에 말했던 reactive 방식에서만 사용할 수 있는 특별한 기능들이 바로 Workers이다. Workers를 사용하면 Rx들의 변화를 감지하고 다양한 상황 별로 적절한 대응을 하도록 구현할 수 있다.
+이전에 말했던 reactive 방식에서만 사용할 수 있는 특별한 기능들이 바로 workers이다. 이를 사용하면 Rx들의 변화를 감지하고 다양한 상황 별로 적절한 대응을 하도록 구현할 수 있다.
 
-Workers에는 아래와 같이 총 4가지가 있다.
+workers에는 아래와 같이 총 4가지가 있다.
 
 ``` dart
 // count2가 처음으로 변경되었을 때만 호출된다.
@@ -589,7 +589,7 @@ interval(
 );
 ```
 
-이 4가지의 Workers를 `Controller`에 적용해보자. 
+이 4가지의 workers를 `Controller`에 적용해보자. 
 
 ``` dart
 void onInit() {
@@ -618,7 +618,7 @@ void onInit() {
 }
 ```
 
-`Controller`에 `onInit()` `override`하고, `super.onInit()`을 제일 먼저 호출한다. 그 다음 사용하고자 하는 Worker를 등록해주면 된다.
+`Controller`에 `onInit()`을 `override`하고, `super.onInit()`을 제일 먼저 호출한다. 그 다음 사용하고자 하는 worker를 등록해주면 된다.
 
 ### 상태 관리 전체 코드
 {:.no_toc}
