@@ -558,7 +558,7 @@ TextButton(onPressed: controller.increment2, child: Text('increment2'))
 
 #### 2.2.5. Workers
 
-이전에 말했던 reactive 방식에서만 사용할 수 있는 특별한 기능들이 바로 workers이다. 이를 사용하면 Rx들의 변화를 감지하고 다양한 상황 별로 적절한 대응을 하도록 구현할 수 있다.
+이전에 말했던 reactive 방식에서만 사용할 수 있는 특별한 기능들이 바로 workers이다. 이를 사용하면 Rx 변수들의 변화를 감지하고 다양한 상황 별로 적절한 대응을 할 수 있다.
 
 workers에는 아래와 같이 총 4가지가 있다.
 
@@ -618,7 +618,7 @@ void onInit() {
 }
 ```
 
-`Controller`에 `onInit()`을 `override`하고, `super.onInit()`을 제일 먼저 호출한다. 그 다음 사용하고자 하는 worker를 등록해주면 된다.
+`Controller`에 `onInit()`을 `override`한다. 그 다음 사용하고자 하는 worker를 등록해주면 된다. 이때 `super.onInit()` 호출을 잊지 말자.
 
 ### 상태 관리 전체 코드
 {:.no_toc}
