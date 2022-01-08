@@ -8,21 +8,17 @@ tags:
 
 어플의 용도와 목적에 따라 화면의 방향을 제한시켜야하는 경우가 있다. 그렇다면 Flutter에서 이를 구현하는 방법을 한번 알아보자.
 
-## 플랫폼별 설정
+## 사전 설정
 
-Flutter에서 화면 방향을 제한시키기 위해서는 플랫폼별로 설정이 필요하다.
+Flutter에서 화면 방향을 제한시키기 위해서는 Xcode에서의 사전 설정이 필요하다.
 
-### 아이폰
+### Xcode 설정
 
 아이폰의 경우에는 Xcode Workspace에서 사용할 화면 방향을 정해줘야한다.
 
 ![](/assets/Flutter/Tip/fixing-the-screen-orientation/Example1.png)
 
-**General > Deployment Info > Device Orientation** 에서 사용할 화면 방향을 체크한다. 우리는 어차피 Flutter에서 Dart 코드를 통해 사용할 화면 방향을 제한할 수 있기 때문에, Xcode에서는 4가지를 모두 체크하도록 하자.
-
-### 안드로이드
-
-안드로이드는 따로 설정이 필요하지 않다.
+**General > Deployment Info > Device Orientation** 에서 사용할 화면 방향을 체크한다. 어차피 Flutter에서 Dart 코드를 통해 사용할 화면 방향을 제한할 수 있기 때문에, Xcode에서는 4가지를 모두 체크해도 된다.
 
 ## 화면 방향 설정 방법
 
@@ -72,7 +68,7 @@ Widget build(BuildContext context) {
 
 세로 정방향으로 고정이 잘 된 것을 확인할 수 있다.
 
-그런데 전방향(왼쪽) 영상을 보면 세로 역방향만 적용되지 않는다. 홈버튼이 없는 아이폰들의 경우, 4가지 방향 중에 세로 역방향을 지원하지 않는다. 애플이 이렇게 설정을 한 것이라고 한다.
+그런데 전방향(왼쪽) 영상을 보면 조금 이상한 점이 있다. 세로 역방향만 적용되지 않는다는 것이다. 홈버튼이 없는 아이폰들의 경우, 4가지 방향 중에 세로 역방향을 지원하지 않는다. 찾아보니 애플이 이렇게 설정을 한 것이라고 한다.
 
 ### 아이폰(홈버튼 O)
 
@@ -87,3 +83,7 @@ Widget build(BuildContext context) {
 ![세로 정방향만](/assets/flutter/Tip/fixing-the-screen-orientation/Example7.gif){: #magnific  width='400' }
 
 안드로이드도 세로 정방향 고정이 잘 적용되었다.
+
+## 전체 예시 코드
+
+<https://github.com/terry1213/flutter-example/tree/fix_the_screen_orientation>{:target="\_blank"}
