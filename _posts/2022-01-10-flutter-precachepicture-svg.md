@@ -1,5 +1,9 @@
 ---
 title: "[Flutter] precachePicture()를 통해 svg 파일을 캐시에 저장하기"
+categories:
+- Flutter
+tags:
+- Tip
 ---
 
 이전에 `precacheImage()`를 통해 이미지 파일의 로딩 시간을 줄이는 법(<https://terry1213.github.io/flutter/flutter-precacheimage/>)을 정리했었다. 다른 이미지 파일들은 해당 방법으로 캐시에 저장할 수 있지만, svg 파일에는 사용할 수 없다.
