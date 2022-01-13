@@ -1,5 +1,5 @@
 ---
-title: "[Flutter] precacheImage 활용하여 이미지 첫 로딩 시간 줄이기"
+title: "[Flutter] precacheImage() 활용하여 이미지 첫 로딩 시간 줄이기"
 categories:
 - Flutter
 tags:
