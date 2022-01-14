@@ -98,3 +98,7 @@ class ImagePage extends StatelessWidget {
 적용 전의 경우, 짧지만 검은 화면만 보이는 시점이 존재한다. 하지만 오른쪽의 경우, `ImagePage()`가 보이는 동시에 svg 이미지도 보인다.
 
 차이가 크지는 않지만, 약간 늦게 나오는 게 은근히 거슬리는 상황일 때 유용하다. 예를 들어, 스플래시 이미지에서 배경보다 중앙 로고(svg)가 약간씩 늦게 나타나는 게 불편할 때 유용하게 사용했다.
+
+## 전체 예시 코드
+
+<https://github.com/terry1213/flutter-example/tree/precachePicture>{:target="\_blank"}
