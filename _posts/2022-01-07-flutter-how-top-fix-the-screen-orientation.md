@@ -16,7 +16,7 @@ Flutter에서 화면 방향을 제한시키기 위해서는 Xcode에서의 사�
 
 아이폰의 경우에는 Xcode Workspace에서 사용할 화면 방향을 정해줘야한다.
 
-![](/assets/Flutter/Tip/fixing-the-screen-orientation/Example1.png)
+![](/assets/flutter/Tip/fixing-the-screen-orientation/Example1.png)
 
 **General > Deployment Info > Device Orientation** 에서 사용할 화면 방향을 체크한다. 어차피 Flutter에서 Dart 코드를 통해 사용할 화면 방향을 제한할 수 있기 때문에, Xcode에서는 4가지를 모두 체크해도 된다.
 
