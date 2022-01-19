@@ -28,7 +28,7 @@ onTap: () {
 },
 ```
 
-만약, Linter를 사용 중이며 unnecessary_lambdas 룰을 설정했다면 위 코드에서는 다음과 같은 메시지가 보일 것이다.
+만약, Linter를 사용 중이며 [unnecessary_lambdas](https://dart-lang.github.io/linter/lints/unnecessary_lambdas.html){:target="\_blank"} 룰을 설정했다면 위 코드에서는 다음과 같은 메시지가 보일 것이다.
 
 ```
 DON'T create a lambda when a tear-off will do.
