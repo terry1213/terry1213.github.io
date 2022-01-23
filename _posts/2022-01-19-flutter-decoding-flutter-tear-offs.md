@@ -44,8 +44,6 @@ onTap: myHandler,
 
 이렇게 `onTap` 파라미터에 함수를 직접 반환하는 것이 Tear-off이다. 이렇게 Tear-off를 사용하면 불필요한 코드를 없앨 수 있다.
 
-{% include adsense.html %}
-
 ## Tear-off의 기존 한계
 
 Tear-off에는 한계가 있다. 이에 대해 알아보자.
