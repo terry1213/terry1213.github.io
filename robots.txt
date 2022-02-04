@@ -2,5 +2,4 @@ User-agent: *
 Disallow: /page*/
 Disallow: /portfolio/
 
-Sitemap: https://terry1213.github.io/sitemap.xml
 Sitemap: https://terry1213.github.io/sitemap1.xml
