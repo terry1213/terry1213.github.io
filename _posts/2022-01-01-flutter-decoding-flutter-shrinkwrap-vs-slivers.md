@@ -79,7 +79,7 @@ return CustomScrollView( // ListView 대신 CustomScrollView 사용.
 final outerListChildren = <SliverList>[]; // ListView 대신 SliverList 사용.
 
 return CustomScrollView(
-  children: outerListChildren,
+  slivers: outerListChildren,
 )
 ```
 
@@ -96,7 +96,7 @@ final outerListChildren = <SliverList>[
 ];
 
 return CustomScrollView(
-  children: outerListChildren,
+  slivers: outerListChildren,
 )
 ```
 
