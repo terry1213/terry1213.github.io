@@ -12,37 +12,7 @@ tags:
 
 `AppBar`가 존재하는 화면에서 스테이터스 바 색을 변경해보자.
 
-### Brightness
-
-우선 `Brightness`를 사용하는 방법이 있다.
-
-``` dart
-MaterialApp(
-  theme: ThemeData(
-    appBarTheme: AppBarTheme(
-      brightness: Brightness.dark,
-    )
-  ),
-  home: StatusBarColorExample(),
-)
-```
-
-``` dart
-Scaffold(
-  appBar: AppBar(
-    title: Text('Status Bar Color Example'),
-    brightness: Brightness.dark,
-  ),
-)
-```
-
-첫번째는 `AppBarTheme`에 적용하여 어플 전체의, 아래는 `AppBar`에 적용하여 특정 화면의 스테이터스 바 색이 변경된다.
-
-> 하지만, `AppBarTheme`과 `AppBar`의 `brightness`는 v2.4.0-0.0.pre 버전부터는 사용하지 않는 것이 권장된다.
-
-### SystemUiOverlayStyle
-
-`SystemUiOverlayStyle`을 사용할 수도 있다.
+`SystemUiOverlayStyle`을 사용하면 된다.
 
 ``` dart
 MaterialApp(
@@ -72,8 +42,6 @@ Scaffold(
 ## AppBar가 없는 화면에 적용
 
 위의 방법은 `AppBar`가 있는 화면에만 적용된다. 따라서 `AppBar`가 없는 화면의 스테이터스 바 색을 변경할 수 있는 방법도 필요하다.
-
-### SystemUiOverlayStyle
 
 앞의 방법처럼 `SystemUiOverlayStyle`를 설정하면 되지만, 다른 점은 `SystemChrome.setSystemUIOverlayStyle()`를 사용한다는 것이다.
 
