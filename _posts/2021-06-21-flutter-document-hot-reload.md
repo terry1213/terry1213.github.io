@@ -8,7 +8,7 @@ tags:
 
 [Flutter 공식 문서 원본 이동](https://flutter.dev/docs/development/tools/hot-reload){:target="_blank"}
 
-Flutter의 핫 리로드 기능은 개발자가 빠르고 간단하게 테스트하고, UI를 빌드하고, 버그를 고치는 것에 도움을 준다. 핫 리로드는 실행 중인 가상 머신(Vertual Machine)에 업데이트된 소스 코드를 주입하는 방식으로 작동한다. 가상 머신이 새로운 버전의 필드와 함수로 클래스를 업데이트한 후에, Flutter 프레임워크가 자동으로 위젯 트리를 재빌드하고, 개발자가 변경 사항을 빠르게 확인할 수 있게 만들어준다.
+Flutter의 핫 리로드 기능은 개발자가 빠르고 간단하게 테스트하고, UI를 빌드하고, 버그를 고치는 것에 도움을 준다. 핫 리로드는 실행 중인 가상 머신(Virtual Machine)에 업데이트된 소스 코드를 주입하는 방식으로 작동한다. 가상 머신이 새로운 버전의 필드와 함수로 클래스를 업데이트한 후에, Flutter 프레임워크가 자동으로 위젯 트리를 재빌드하고, 개발자가 변경 사항을 빠르게 확인할 수 있게 만들어준다.
 
 ## 핫 리로드를 실행하는 방법
 
@@ -31,7 +31,7 @@ Reloaded 1 of 448 libraries in 978ms.
 > <br>
 > * **핫 리로드**는 가상 머신에 변경된 코드를 불러오고 위젯 트리를 재빌드한다. 이때 앱의 상태를 보존하기 때문에 `main()`이나 `initState()`를 재실행하지 않는다. (Intellij와  Android Studio에서는 ⌘\, VSCode에서는  ⌃F5)
 > * **핫 리스타트** 는 가상 머신에 변경된 코드를 불러오고 Flutter 앱을 재시작한다. 이때 앱의 상태는 잃어버린다. (Intellij와  Android Studio에서는 ⇧⌘\, VSCode에서는  ⇧⌘F5)
-> * **풀 리스타트**는 iOS, Android, Wep 어플을 재시작한다. 이는 앞선 두가지보다 더 많은 시간을 필요로하는데 Java / Kotlin / ObjC / Swift 코드를 재 컴파일링 해야하기 때문이다. Wep의 경우에는 Dart Development Compiler를 재시작하기까지 한다. 풀 리스타트에는 단축키는 따로 없어서 직접 앱을 멈췄다가 시작해야한다.
+> * **풀 리스타트**는 iOS, Android, Web 어플을 재시작한다. 이는 앞선 두가지보다 더 많은 시간을 필요로하는데 Java / Kotlin / ObjC / Swift 코드를 재 컴파일링 해야하기 때문이다. Web의 경우에는 Dart Development Compiler를 재시작하기까지 한다. 풀 리스타트에는 단축키는 따로 없어서 직접 앱을 멈췄다가 시작해야한다.
 > <br><br>
 > 현재 Flutter Web에서는 핫 리스타트만 지원한다. 핫 리로드는 지원하지 않는다.
 
