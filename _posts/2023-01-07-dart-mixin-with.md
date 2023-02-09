@@ -6,7 +6,7 @@ tags:
 - Tip
 ---
 
-## mixin, with이란 무엇일까?
+## mixin, with란 무엇일까?
 
 Dart에서 상속을 할 때는 보통 `extends`를 사용한다. 하지만 `extends`는 다중 상속이 불가능하다는 단점이 있다. 이때 다중 상속을 하기 위해 필요한 것이 바로 `mixin`, `with`다.
 
