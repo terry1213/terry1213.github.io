@@ -31,7 +31,7 @@ H-Index는 과학자의 생산성과 영향력을 나타내는 지표입니다. 
 
 ## 접근 방식 및 풀이
 
-우선 `.sort((a,b) => b - a)`를 사용해서 많이 인용된 논문 순으로 정렬한다. 정렬된 `citations`의 앞에서부터 차례로 `citations[i]`(`i+1`번째 숫자)가 `i+1` 이상인지를 확인한다. `citations[i]`가 `i+1` 이상이라면 `i+1`를 `hIndex`에 저장한다. 하지만 아직 더 높은 `hIndex`가 나올 수 있으므로 다음으로 넘어간다. 이런 식으로 반복하다가 `citations[i]`가 `i+1`보다 작은 경우가 나온다면, 해당 시점 직전에 저장한 `hIndex`가 정답이되므로 계산을 중지한다.
+우선 `.sort((a,b) => b - a)`를 사용해서 많이 인용된 논문 순으로 정렬한다. 정렬된 `citations`의 앞에서부터 차례대로 `hIndex + 1` 이상인지를 확인한다. 비교한 논문의 인용 회수가 `hIndex + 1` 이상이라면 `hIndex`를 1 늘린다. 하지만 아직 더 높은 `hIndex`가 나올 수 있으므로 다음으로 넘어간다. 이런 식으로 반복하다가 인용된 회수가 `hIndex + 1`보다 작은 논문이 나온다면, 해당 시점 직전에 저장한 `hIndex`가 정답이되므로 계산을 중지한다.
 
 ## 코드
 
@@ -40,15 +40,15 @@ H-Index는 과학자의 생산성과 영향력을 나타내는 지표입니다. 
 ``` javascript
 function solution(citations) {
     var hIndex = 0;
-    citations.sort((a,b) => b - a);
-    
-    for(let i = 0; i < citations.length; i++){
-        if(i + 1 <= citations[i])
-            hIndex = i + 1;
-        else
+    citations.sort((a, b) => b - a);
+		
+    for(citation of citations) {
+        if(citation >= hIndex + 1) {
+            hIndex++;
+        } else {
             break;
+        }
     }
-    
     return hIndex;
 }
 ```
